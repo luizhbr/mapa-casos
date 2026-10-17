@@ -1,0 +1,250 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f6f4ef">
+<title>Quem está em cada caso</title>
+<meta name="description" content="Casos judiciais da política brasileira, da direita e da esquerda, com a situação de cada pessoa e as fontes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f4ef;--ink:#121212;--mut:#6b6860;--line:#e4e0d6;--card:#fff;
+--dir:#2b5ea7;--cen:#7d62a8;--esq:#c2412d;--jud:#34495e;--emp:#b08419;
+--serif:"Fraunces",Georgia,serif;--sans:"Inter",system-ui,-apple-system,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--sans);overflow-x:hidden}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+/* top bar */
+.top{position:fixed;inset:0 0 auto 0;z-index:20;display:flex;align-items:center;gap:10px;padding:calc(10px + env(safe-area-inset-top)) 18px 10px;transition:background .3s,box-shadow .3s}
+.top.on{background:rgba(246,244,239,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
+.brand{font:600 15px var(--serif);letter-spacing:-.01em;opacity:0;transition:opacity .3s}
+.top.on .brand{opacity:1}
+.top .sp{flex:1}
+.ic{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--card);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.ic svg{width:18px;height:18px}
+.mapbtn{height:40px;padding:0 16px;border-radius:20px;background:var(--ink);color:#fff;font-size:14px;font-weight:500;display:flex;align-items:center;gap:8px;text-decoration:none}
+/* hero */
+.hero{position:relative;height:100svh;min-height:560px;overflow:hidden;display:flex;align-items:flex-end;padding:0 22px 12vh}
+.layer{position:absolute;inset:0;pointer-events:none;will-change:transform}
+.orb{position:absolute;border-radius:50%;filter:blur(2px)}
+.hero h1{position:relative;font:400 clamp(44px,12vw,104px)/.95 var(--serif);letter-spacing:-.035em;max-width:900px}
+.hero h1 em{font-style:italic;color:var(--mut)}
+.hero .lead{position:relative;margin-top:22px;max-width:520px;color:var(--mut);font-size:17px}
+.scroll{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);font-size:12px;color:var(--mut);letter-spacing:.12em;text-transform:uppercase}
+.hero-inner{position:relative;will-change:transform}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border-block:1px solid var(--line)}
+.stats div{background:var(--bg);padding:26px 16px;text-align:center}
+.stats b{display:block;font:400 clamp(36px,9vw,60px)/1 var(--serif);letter-spacing:-.03em}
+.stats span{font-size:13px;color:var(--mut)}
+/* sections */
+section{padding:72px 22px;max-width:980px;margin:0 auto}
+.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin-bottom:14px}
+h2{font:400 clamp(30px,7vw,48px)/1.05 var(--serif);letter-spacing:-.025em;margin-bottom:18px}
+.p{color:var(--mut);max-width:620px}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:500;padding:5px 11px;border-radius:999px;background:var(--card);border:1px solid var(--line);white-space:nowrap}
+.tag i{width:8px;height:8px;border-radius:50%}
+/* big quote parallax */
+.band{position:relative;overflow:hidden;background:var(--ink);color:#fff;padding:110px 22px}
+.band .bg{position:absolute;inset:-20% 0;font:400 34vw/1 var(--serif);color:rgba(255,255,255,.04);white-space:nowrap;letter-spacing:-.05em;will-change:transform}
+.band .in{position:relative;max-width:820px;margin:0 auto}
+.band h2{color:#fff}.band .p{color:#b5b1a8}
+.band .row{display:flex;gap:6px;flex-wrap:wrap;margin-top:24px}
+.band .tag{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.14);color:#fff}
+.band button.go{margin-top:28px;height:46px;padding:0 22px;border-radius:23px;background:#fff;color:var(--ink);font-weight:600}
+/* filters */
+.filters{position:sticky;top:calc(60px + env(safe-area-inset-top));z-index:10;display:flex;gap:8px;overflow-x:auto;padding:10px 22px;margin:0 -22px 18px;scrollbar-width:none;background:linear-gradient(var(--bg) 75%,transparent)}
+.filters::-webkit-scrollbar{display:none}
+.chip{flex:none;height:36px;padding:0 15px;border-radius:18px;border:1px solid var(--line);background:var(--card);font-size:14px;font-weight:500;display:flex;align-items:center;gap:7px}
+.chip i{width:8px;height:8px;border-radius:50%}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+/* cards */
+.list{display:grid;gap:12px}
+@media(min-width:760px){.list{grid-template-columns:1fr 1fr}}
+.case{display:block;text-align:left;width:100%;background:var(--card);border-radius:18px;padding:20px;border:1px solid var(--line);transition:transform .25s,box-shadow .25s;opacity:0;transform:translateY(24px)}
+.case.in{opacity:1;transform:none;transition:opacity .6s,transform .6s cubic-bezier(.2,.7,.2,1)}
+.case:active{transform:scale(.985)}
+.case .yr{font-size:12px;color:var(--mut);letter-spacing:.06em}
+.case h3{font:600 20px/1.2 var(--serif);letter-spacing:-.01em;margin:6px 0 8px}
+.case p{font-size:14px;color:var(--mut);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.dots{display:flex;align-items:center;gap:4px;margin-top:14px;flex-wrap:wrap}
+.dots i{width:10px;height:10px;border-radius:50%}
+.dots span{font-size:12.5px;color:var(--mut);margin-left:6px}
+.sbar{display:flex;height:4px;border-radius:2px;overflow:hidden;margin-top:12px;background:var(--line)}
+.empty{color:var(--mut);padding:30px 0;text-align:center}
+/* gallery */
+.gal{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -22px;padding:4px 22px 10px;scrollbar-width:none}
+.gal::-webkit-scrollbar{display:none}
+.gal a{flex:none;width:78%;max-width:340px;scroll-snap-align:start;background:var(--card);border-radius:18px;overflow:hidden;border:1px solid var(--line);text-decoration:none}
+.gal img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;display:block;background:#eee}
+.gal div{padding:12px 14px;font-weight:500;font-size:14px}
+footer{padding:40px 22px calc(40px + env(safe-area-inset-bottom));text-align:center;font-size:13px;color:var(--mut);border-top:1px solid var(--line)}
+/* sheet */
+.scrim{position:fixed;inset:0;background:rgba(18,18,18,.35);opacity:0;pointer-events:none;transition:opacity .3s;z-index:30}
+.scrim.on{opacity:1;pointer-events:auto}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:31;background:var(--bg);border-radius:22px 22px 0 0;max-height:88svh;overflow:auto;transform:translateY(105%);transition:transform .38s cubic-bezier(.2,.8,.2,1);padding:0 20px calc(28px + env(safe-area-inset-bottom));overscroll-behavior:contain}
+.sheet.on{transform:none}
+@media(min-width:760px){.sheet{left:auto;top:0;width:440px;max-height:none;border-radius:0;transform:translateX(105%)}}
+.grab{position:sticky;top:0;background:var(--bg);padding:10px 0 8px;display:flex;justify-content:space-between;align-items:center;z-index:1}
+.grab::before{content:"";position:absolute;left:50%;top:7px;width:38px;height:4px;border-radius:2px;background:#d6d1c5;transform:translateX(-50%)}
+.sheet h3{font:400 28px/1.1 var(--serif);letter-spacing:-.02em;margin:10px 0 8px}
+.sheet .meta{color:var(--mut);font-size:14.5px;margin-bottom:16px}
+.who{background:var(--card);border-radius:14px;padding:14px;margin-bottom:10px;border:1px solid var(--line)}
+.who .h{display:flex;align-items:center;gap:8px;font-weight:600;font-size:15px}
+.who .h i{width:9px;height:9px;border-radius:50%;flex:none}
+.who .h button{text-align:left;font-weight:600}
+.pill{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:6px;color:#fff;margin:8px 0 6px}
+.who p{font-size:14px;color:#3d3b37}
+.who .src{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.who .src a{font-size:12px;color:var(--mut);text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:2px 7px}
+/* search */
+.search{position:fixed;inset:0;z-index:40;background:var(--bg);display:none;flex-direction:column;padding:calc(12px + env(safe-area-inset-top)) 18px 18px}
+.search.on{display:flex}
+.search .bar{display:flex;gap:10px;align-items:center}
+.search input{flex:1;height:46px;border-radius:23px;border:1px solid var(--line);background:var(--card);padding:0 18px;font:16px var(--sans);outline:none}
+.res{overflow:auto;margin-top:12px}
+.res button{display:flex;width:100%;align-items:center;gap:10px;padding:14px 4px;border-bottom:1px solid var(--line);text-align:left}
+.res i{width:9px;height:9px;border-radius:50%;flex:none}
+.res small{color:var(--mut);margin-left:auto;font-size:12px}
+@media(prefers-reduced-motion:reduce){.layer,.hero-inner,.band .bg{transform:none!important}.case{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style></head><body>
+<div class="top" id="top">
+ <div class="brand">Quem está em cada caso</div><div class="sp"></div>
+ <button class="ic" id="sbtn" aria-label="Buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+ <a class="mapbtn" href="mapa.html"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="7" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7 7l10 0M6.5 8l4.5 8M17.5 9l-4.5 7"/></svg>Mapa</a>
+</div>
+
+<header class="hero" id="hero">
+ <div class="layer" data-speed="0.15" id="l1"></div>
+ <div class="layer" data-speed="0.35" id="l2"></div>
+ <div class="layer" data-speed="0.6" id="l3"></div>
+ <div class="hero-inner" data-speed="-0.12">
+  <h1>Quem está em <em>cada caso</em></h1>
+  <p class="lead">Os processos da política brasileira, da direita e da esquerda, com a situação de cada pessoa e a fonte de cada informação.</p>
+ </div>
+ <div class="scroll">Role</div>
+</header>
+
+<div class="stats"><div><b data-n="casos">0</b><span>casos</span></div><div><b data-n="pessoas">0</b><span>pessoas e empresas</span></div><div><b data-n="ligacoes">0</b><span>ligações com fonte</span></div></div>
+
+<section>
+ <div class="kicker">Como ler</div>
+ <h2>Citado não é culpado.</h2>
+ <p class="p">Só uma condenação definitiva é crime reconhecido pela Justiça. Casos anulados ou arquivados não valem como condenação. O número de nomes de cada lado reflete os casos escolhidos, e não é um placar de corrupção. Situação em 17/10/2026.</p>
+ <div class="legend" id="legend"></div>
+</section>
+
+<div class="band" id="band">
+ <div class="bg" data-speed="0.25">Master</div>
+ <div class="in">
+  <div class="kicker" style="color:#8f8b82">Interseção</div>
+  <h2>Um banco que liga todos os lados.</h2>
+  <p class="p">O caso Banco Master, de Daniel Vorcaro, atinge nomes da direita, do centro, do governo Lula e ministros do STF.</p>
+  <div class="row" id="masterRow"></div>
+  <button class="go" onclick="openNode('c-master')">Ver o caso</button>
+ </div>
+</div>
+
+<section id="casos">
+ <div class="kicker">Os casos</div>
+ <h2>Todos os processos</h2>
+ <div class="filters" id="filters"></div>
+ <div class="list" id="list"></div>
+</section>
+
+<section>
+ <div class="kicker">Infográficos</div>
+ <h2>Para compartilhar</h2>
+ <div class="gal">
+  <a href="infograficos/infografico.png" target="_blank"><img loading="lazy" src="infograficos/infografico.png" alt="Situação judicial de Lula, Jair e Flávio Bolsonaro"><div>Situação judicial de Lula, Jair e Flávio</div></a>
+  <a href="infograficos/economia.png" target="_blank"><img loading="lazy" src="infograficos/economia.png" alt="Economia nos governos Lula, Dilma e Bolsonaro"><div>Economia: Lula, Dilma e Bolsonaro</div></a>
+  <a href="infograficos/analise.png" target="_blank"><img loading="lazy" src="infograficos/analise.png" alt="Análise: Bolsonaro e PT"><div>Bolsonaro e PT, indicador por indicador</div></a>
+ </div>
+</section>
+
+<footer>Fontes: STF, PF, MPF, Agência Brasil, G1, Folha, BBC, Senado e outras, indicadas em cada ligação.<br>Atualizado em 17/10/2026 · <a href="https://github.com/luizhbr/mapa-casos">dados no GitHub</a></footer>
+
+<div class="scrim" id="scrim"></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true"><div class="grab"><span></span><button class="ic" id="close" aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div><div id="sc"></div></div>
+<div class="search" id="search"><div class="bar"><input id="q" placeholder="Buscar pessoa, partido ou caso" autocomplete="off"><button class="ic" id="sclose" aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div><div class="res" id="res"></div></div>
+
+<script>/*DATA*/</script>
+<script>
+const $=s=>document.querySelector(s);
+const COL={direita:"var(--dir)",centro:"var(--cen)",esquerda:"var(--esq)",judiciario:"var(--jud)","n-a":"var(--emp)"};
+const LADO={direita:"Direita",centro:"Centro",esquerda:"Esquerda",judiciario:"Judiciário","n-a":"Empresas e operadores"};
+const ST={condenado:["Condenado","#c2412d"],denunciado:["Denunciado","#e07b24"],indiciado:["Indiciado","#c99a12"],investigado:["Investigado","#2b6cb8"],citado:["Citado","#8d8a83"],anulado:["Anulado","#17927a"],arquivado:["Arquivado","#b5b0a5"]};
+const ORD=Object.keys(ST);
+const N=Object.fromEntries(D.nodes.map(n=>[n.id,n]));
+const E=D.edges,T=D.ligacoes||[];
+const cases=D.nodes.filter(n=>n.tipo=="caso");
+const caseOf=e=>N[e.de].tipo=="caso"?e.de:N[e.para].tipo=="caso"?e.para:null;
+const other=(e,id)=>e.de==id?e.para:e.de;
+const esc=s=>(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const host=u=>{try{return new URL(u).hostname.replace(/^www\d?\./,"")}catch(e){return"fonte"}};
+const fmt=d=>d?d.split("-").reverse().join("/"):"";
+cases.forEach(c=>{c.rel=E.filter(e=>e.de==c.id||e.para==c.id);c.ppl=c.rel.map(e=>N[other(e,c.id)]);const ys=c.rel.map(e=>e.data).filter(Boolean).sort();c.last=ys[ys.length-1]||"";c.yr=ys.length?(ys[0].slice(0,4)==c.last.slice(0,4)?c.last.slice(0,4):ys[0].slice(0,4)+"–"+c.last.slice(0,4)):"";});
+cases.sort((a,b)=>b.last.localeCompare(a.last)||b.rel.length-a.rel.length);
+/* stats */
+const counts={casos:cases.length,pessoas:D.nodes.filter(n=>n.tipo=="pessoa"||n.tipo=="empresa").length,ligacoes:E.length};
+/* legend */
+$("#legend").innerHTML=ORD.map(k=>`<span class="tag"><i style="background:${ST[k][1]}"></i>${ST[k][0]}</span>`).join("");
+const m=cases.find(c=>c.id=="c-master");
+if(m)$("#masterRow").innerHTML=m.ppl.slice(0,14).map(p=>`<span class="tag"><i style="background:${COL[p.lado]}"></i>${esc(p.nome.replace(/ \(.*\)/,""))}</span>`).join("");
+/* filters */
+const F=[["todos","Todos"],["direita","Direita"],["centro","Centro"],["esquerda","Esquerda"],["condenado","Com condenação"],["anulado","Anulados"]];
+let cur="todos";
+$("#filters").innerHTML=F.map(([k,l])=>`<button class="chip${k==cur?" on":""}" data-f="${k}">${COL[k]?`<i style="background:${COL[k]}"></i>`:""}${l}</button>`).join("");
+$("#filters").onclick=e=>{const b=e.target.closest(".chip");if(!b)return;cur=b.dataset.f;document.querySelectorAll(".chip").forEach(x=>x.classList.toggle("on",x==b));render()};
+function render(){
+ const list=cases.filter(c=>cur=="todos"||(ST[cur]?c.rel.some(e=>e.status==cur):c.ppl.some(p=>p.lado==cur)));
+ $("#list").innerHTML=list.length?list.map(c=>{
+  const sc={};c.rel.forEach(e=>sc[e.status]=(sc[e.status]||0)+1);
+  const bar=ORD.filter(k=>sc[k]).map(k=>`<i style="flex:${sc[k]};background:${ST[k][1]}"></i>`).join("");
+  const ppl=c.ppl.filter(p=>p.tipo!="partido");
+  return `<button class="case" data-id="${c.id}"><div class="yr">${c.yr}</div><h3>${esc(c.nome)}</h3><p>${esc(c.resumo)}</p><div class="dots">${ppl.slice(0,12).map(p=>`<i style="background:${COL[p.lado]}" title="${esc(p.nome)}"></i>`).join("")}<span>${ppl.length} ${ppl.length==1?"envolvido":"envolvidos"}</span></div><div class="sbar">${bar}</div></button>`}).join(""):`<p class="empty">Nenhum caso com esse filtro.</p>`;
+ observe();
+}
+$("#list").onclick=e=>{const b=e.target.closest(".case");if(b)openNode(b.dataset.id)};
+/* reveal */
+const io=("IntersectionObserver" in window)?new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{rootMargin:"0px 0px -8% 0px"}):null;
+function observe(){document.querySelectorAll(".case:not(.in)").forEach((el,i)=>{el.style.transitionDelay=(i%2)*60+"ms";io?io.observe(el):el.classList.add("in")})}
+/* sheet */
+function item(o,e){const s=ST[e.status]||ST.citado;return `<div class="who"><div class="h"><i style="background:${o.tipo=="caso"?"#121212":COL[o.lado]}"></i><button onclick="openNode('${o.id}')">${esc(o.nome)}</button></div><span class="pill" style="background:${s[1]}">${s[0]}${e.desfecho?" · "+esc(e.desfecho):""}</span><p>${esc(e.descricao)}${e.data?` <span style="color:var(--mut)">(${fmt(e.data)})</span>`:""}</p><div class="src">${(e.fontes||[]).map(u=>`<a href="${u}" target="_blank" rel="noopener">${host(u)}</a>`).join("")}</div></div>`}
+function openNode(id){const n=N[id];if(!n)return;
+ let h=`<div class="kicker" style="margin:6px 0 0">${n.tipo=="caso"?"Caso":n.tipo=="partido"?"Partido":LADO[n.lado]||""}${n.partido&&N[n.partido]?" · "+esc(N[n.partido].nome.split(" – ")[0]):""}</div><h3>${esc(n.nome)}</h3><p class="meta">${esc(n.resumo)}</p>`;
+ E.filter(e=>e.de==id||e.para==id).sort((a,b)=>ORD.indexOf(a.status)-ORD.indexOf(b.status)).forEach(e=>h+=item(N[other(e,id)],e));
+ if(n.tipo=="partido")h+=D.nodes.filter(p=>p.partido==id).map(p=>`<div class="who"><div class="h"><i style="background:${COL[p.lado]}"></i><button onclick="openNode('${p.id}')">${esc(p.nome)}</button></div></div>`).join("");
+ T.filter(t=>t.de==id||t.para==id).forEach(t=>{const o=N[other(t,id)];h+=`<div class="who"><div class="h"><i style="background:${COL[o.lado]}"></i><button onclick="openNode('${o.id}')">${esc(o.nome)}</button></div><p style="margin-top:6px">${esc(t.rotulo)}</p></div>`});
+ $("#sc").innerHTML=h;$("#sheet").scrollTop=0;$("#sheet").classList.add("on");$("#scrim").classList.add("on");$("#search").classList.remove("on");document.body.style.overflow="hidden";
+ if(location.hash!="#"+id)history.pushState(null,"","#"+id)}
+function closeSheet(){$("#sheet").classList.remove("on");$("#scrim").classList.remove("on");document.body.style.overflow="";if(location.hash)history.pushState(null,"",location.pathname)}
+$("#close").onclick=closeSheet;$("#scrim").onclick=closeSheet;
+addEventListener("keydown",e=>{if(e.key=="Escape"){closeSheet();$("#search").classList.remove("on")}});
+addEventListener("popstate",()=>{const id=location.hash.slice(1);id&&N[id]?openNode(id):($("#sheet").classList.remove("on"),$("#scrim").classList.remove("on"),document.body.style.overflow="")});
+/* swipe down to close */
+(()=>{let y0=null;const s=$("#sheet");s.addEventListener("touchstart",e=>{if(s.scrollTop<=0)y0=e.touches[0].clientY},{passive:true});s.addEventListener("touchmove",e=>{if(y0==null)return;const d=e.touches[0].clientY-y0;if(d>0){s.style.transition="none";s.style.transform=`translateY(${d}px)`}},{passive:true});s.addEventListener("touchend",e=>{if(y0==null)return;const d=e.changedTouches[0].clientY-y0;s.style.transition="";s.style.transform="";y0=null;if(d>110)closeSheet()})})();
+/* search */
+const norm=s=>(s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+$("#sbtn").onclick=()=>{$("#search").classList.add("on");$("#q").value="";$("#res").innerHTML="";setTimeout(()=>$("#q").focus(),50)};
+$("#sclose").onclick=()=>$("#search").classList.remove("on");
+$("#q").oninput=e=>{const q=norm(e.target.value);if(q.length<2){$("#res").innerHTML="";return}
+ const r=D.nodes.filter(n=>norm(n.nome).includes(q)).slice(0,30);
+ $("#res").innerHTML=r.length?r.map(n=>`<button onclick="openNode('${n.id}')"><i style="background:${n.tipo=="caso"?"#121212":COL[n.lado]}"></i>${esc(n.nome)}<small>${n.tipo=="caso"?"Caso":n.tipo=="partido"?"Partido":LADO[n.lado]}</small></button>`).join(""):`<p class="empty">Nada encontrado.</p>`};
+/* hero orbs */
+const rnd=(a,b)=>a+Math.random()*(b-a);const pal=["var(--dir)","var(--cen)","var(--esq)","var(--emp)","var(--jud)"];
+[["#l1",6,180,320,.07],["#l2",9,40,110,.22],["#l3",14,6,18,.55]].forEach(([s,n,a,b,o])=>{const L=$(s);for(let i=0;i<n;i++){const d=rnd(a,b),el=document.createElement("i");el.className="orb";Object.assign(el.style,{width:d+"px",height:d+"px",left:rnd(-10,95)+"%",top:rnd(-5,85)+"%",background:pal[i%5],opacity:o});L.appendChild(el)}});
+/* parallax */
+const red=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const px=[...document.querySelectorAll("[data-speed]")];
+let tick=false;function frame(){const y=scrollY,h=innerHeight;$("#top").classList.toggle("on",y>h*.6);
+ if(!red)px.forEach(el=>{const sp=+el.dataset.speed;if(el.closest(".band")){const r=el.parentElement.getBoundingClientRect();el.style.transform=`translate3d(${-(r.top-h/2)*sp}px,0,0)`}else if(y<h*1.2)el.style.transform=`translate3d(0,${y*sp}px,0)`;});
+ tick=false}
+addEventListener("scroll",()=>{if(!tick){tick=true;requestAnimationFrame(frame)}},{passive:true});frame();
+/* counters */
+const cio=new IntersectionObserver(es=>es.forEach(x=>{if(!x.isIntersecting)return;cio.unobserve(x.target);const el=x.target,to=counts[el.dataset.n],t0=performance.now();(function s(t){const k=Math.min(1,(t-t0)/1100);el.textContent=Math.round(to*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(s)})(t0)}),{threshold:.6});
+document.querySelectorAll("[data-n]").forEach(el=>red?el.textContent=counts[el.dataset.n]:cio.observe(el));
+render();
+if(location.hash&&N[location.hash.slice(1)])openNode(location.hash.slice(1));
+</script></body></html>
