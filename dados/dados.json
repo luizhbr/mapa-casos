@@ -1,0 +1,1481 @@
+{
+  "meta": {
+    "titulo": "Mapa de casos: políticos, partidos, empresas e processos",
+    "atualizado_em": "2026-10-17",
+    "notas": [
+      "status = situação atual da pessoa ou empresa em cada caso. Citado não é investigado, e investigado não é réu.",
+      "Absolvições e trancamentos aparecem como 'arquivado', com o campo 'desfecho' explicando.",
+      "'lado' das pessoas segue o partido ou o campo político na época do caso. Casos têm lado 'n-a'.",
+      "A filiação partidária está no campo 'partido' do nó da pessoa, não como aresta."
+    ]
+  },
+  "nodes": [
+    {
+      "id": "pt",
+      "nome": "PT – Partido dos Trabalhadores",
+      "tipo": "partido",
+      "lado": "esquerda",
+      "resumo": "Partido de Lula, Dilma, Gleisi e Jaques Wagner."
+    },
+    {
+      "id": "pdt",
+      "nome": "PDT – Partido Democrático Trabalhista",
+      "tipo": "partido",
+      "lado": "esquerda",
+      "resumo": "Centro-esquerda; partido de Carlos Lupi."
+    },
+    {
+      "id": "psb",
+      "nome": "PSB – Partido Socialista Brasileiro",
+      "tipo": "partido",
+      "lado": "esquerda",
+      "resumo": "Centro-esquerda; partido atual de Geraldo Alckmin."
+    },
+    {
+      "id": "pl",
+      "nome": "PL – Partido Liberal",
+      "tipo": "partido",
+      "lado": "direita",
+      "resumo": "Partido de Jair, Flávio e Eduardo Bolsonaro; presidido por Valdemar Costa Neto."
+    },
+    {
+      "id": "pp",
+      "nome": "PP – Progressistas",
+      "tipo": "partido",
+      "lado": "direita",
+      "resumo": "Centro-direita; partido de Arthur Lira e Ciro Nogueira."
+    },
+    {
+      "id": "ptb",
+      "nome": "PTB – Partido Trabalhista Brasileiro",
+      "tipo": "partido",
+      "lado": "direita",
+      "resumo": "Partido de Roberto Jefferson, Daniel Silveira e Collor na época dos casos; fundiu-se ao Patriota em 2023 (PRD)."
+    },
+    {
+      "id": "uniao",
+      "nome": "União Brasil",
+      "tipo": "partido",
+      "lado": "direita",
+      "resumo": "Centro-direita; partido de Juscelino Filho e, na época do caso Marielle, de Chiquinho Brazão."
+    },
+    {
+      "id": "mdb",
+      "nome": "MDB – Movimento Democrático Brasileiro",
+      "tipo": "partido",
+      "lado": "centro",
+      "resumo": "Partido de Temer, Cunha (na época), Geddel e Sérgio Cabral."
+    },
+    {
+      "id": "psdb",
+      "nome": "PSDB – Partido da Social Democracia Brasileira",
+      "tipo": "partido",
+      "lado": "centro",
+      "resumo": "Centro / centro-direita; partido de Aécio, Serra, Azeredo e de Alckmin até 2021."
+    },
+    {
+      "id": "odebrecht",
+      "nome": "Odebrecht (hoje Novonor)",
+      "tipo": "empresa",
+      "lado": "n-a",
+      "resumo": "Empreiteira central da Lava Jato; acordo de leniência em 2016. Em 2023 o STF anulou o uso das provas dos sistemas Drousys e MyWebDay em todas as ações."
+    },
+    {
+      "id": "oas",
+      "nome": "OAS",
+      "tipo": "empresa",
+      "lado": "n-a",
+      "resumo": "Empreiteira citada nos casos do triplex e do sítio de Atibaia."
+    },
+    {
+      "id": "jbs",
+      "nome": "JBS / J&F",
+      "tipo": "empresa",
+      "lado": "n-a",
+      "resumo": "Grupo dos irmãos Batista; delação de 2017 atingiu Temer e Aécio."
+    },
+    {
+      "id": "banco-master",
+      "nome": "Banco Master",
+      "tipo": "empresa",
+      "lado": "n-a",
+      "resumo": "Banco de Daniel Vorcaro, liquidado pelo Banco Central em nov/2025; alvo da Operação Compliance Zero."
+    },
+    {
+      "id": "utc",
+      "nome": "UTC Engenharia",
+      "tipo": "empresa",
+      "lado": "n-a",
+      "resumo": "Empreiteira envolvida nos contratos da BR Distribuidora (caso Collor)."
+    },
+    {
+      "id": "lula",
+      "nome": "Luiz Inácio Lula da Silva",
+      "tipo": "pessoa",
+      "lado": "esquerda",
+      "resumo": "Presidente da República (2003–2010 e desde 2023). Nenhuma condenação em vigor.",
+      "partido": "pt"
+    },
+    {
+      "id": "dirceu",
+      "nome": "José Dirceu",
+      "tipo": "pessoa",
+      "lado": "esquerda",
+      "resumo": "Ex-ministro da Casa Civil. Condenado no mensalão; condenações da Lava Jato anuladas em 2024.",
+      "partido": "pt"
+    },
+    {
+      "id": "genoino",
+      "nome": "José Genoino",
+      "tipo": "pessoa",
+      "lado": "esquerda",
+      "resumo": "Ex-presidente do PT, condenado no mensalão.",
+      "partido": "pt"
+    },
+    {
+      "id": "delubio",
+      "nome": "Delúbio Soares",
+      "tipo": "pessoa",
+      "lado": "esquerda",
+      "resumo": "Ex-tesoureiro do PT, condenado no mensalão.",
+      "partido": "pt"
+    },
+    {
+      "id": "palocci",
+      "nome": "Antonio Palocci",
+      "tipo": "pessoa",
+      "lado": "esquerda",
+      "resumo": "Ex-ministro da Fazenda; atos da Lava Jato contra ele anulados em 2025 (delação mantida).",
+      "partido": "pt"
+    },
+    {
+      "id": "gleisi",
+      "nome": "Gleisi Hoffmann",
+      "tipo": "pessoa",
+      "lado": "esquerda",
+      "resumo": "Ex-presidente do PT; absolvida pelo STF na AP 1003 (2018).",
+      "partido": "pt"
+    },
+    {
+      "id": "jaques-wagner",
+      "nome": "Jaques Wagner",
+      "tipo": "pessoa",
+      "lado": "esquerda",
+      "resumo": "Senador (PT-BA), líder do governo; alvo da 9ª fase da Compliance Zero (caso Master).",
+      "partido": "pt"
+    },
+    {
+      "id": "lupi",
+      "nome": "Carlos Lupi",
+      "tipo": "pessoa",
+      "lado": "esquerda",
+      "resumo": "Ex-ministro da Previdência (2023–2025); deixou o cargo após a operação sobre fraudes no INSS. Não é alvo da PF.",
+      "partido": "pdt"
+    },
+    {
+      "id": "frei-chico",
+      "nome": "José Ferreira da Silva (Frei Chico)",
+      "tipo": "pessoa",
+      "lado": "esquerda",
+      "resumo": "Irmão de Lula; foi vice-presidente do Sindnapi, entidade investigada no caso INSS. Não é alvo da PF."
+    },
+    {
+      "id": "lulinha",
+      "nome": "Fábio Luís Lula da Silva (Lulinha)",
+      "tipo": "pessoa",
+      "lado": "esquerda",
+      "resumo": "Filho de Lula; citado na CPMI do INSS por pagamentos do 'Careca do INSS' a empresária próxima dele. Não é investigado pela PF."
+    },
+    {
+      "id": "alckmin",
+      "nome": "Geraldo Alckmin",
+      "tipo": "pessoa",
+      "lado": "centro",
+      "resumo": "Vice-presidente (PSB); na época dos fatos (2014) estava no PSDB.",
+      "partido": "psb"
+    },
+    {
+      "id": "bolsonaro",
+      "nome": "Jair Bolsonaro",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "Ex-presidente (2019–2022). Condenado em definitivo a 27 anos e 3 meses na trama golpista; prisão domiciliar desde 24/03/2026.",
+      "partido": "pl"
+    },
+    {
+      "id": "flavio",
+      "nome": "Flávio Bolsonaro",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "Senador (PL-RJ). Nenhuma condenação; investigado no inquérito 'Dark Horse' (2026).",
+      "partido": "pl"
+    },
+    {
+      "id": "eduardo",
+      "nome": "Eduardo Bolsonaro",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "Ex-deputado federal (PL-SP), vive nos EUA; condenado por coação no curso do processo (2026).",
+      "partido": "pl"
+    },
+    {
+      "id": "carlos",
+      "nome": "Carlos Bolsonaro",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "Vereador do Rio; investigado no caso Abin paralela (1ª instância).",
+      "partido": "pl"
+    },
+    {
+      "id": "braga-netto",
+      "nome": "Walter Braga Netto",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "General da reserva, ex-ministro e candidato a vice em 2022; condenado a 26 anos na trama golpista.",
+      "partido": "pl"
+    },
+    {
+      "id": "heleno",
+      "nome": "Augusto Heleno",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "General da reserva, ex-ministro do GSI do governo Bolsonaro (sem filiação); condenado a 21 anos na trama golpista."
+    },
+    {
+      "id": "ramagem",
+      "nome": "Alexandre Ramagem",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "Ex-diretor da Abin e ex-deputado (PL-RJ); condenado a 16 anos e 1 mês na trama golpista; foragido.",
+      "partido": "pl"
+    },
+    {
+      "id": "mauro-cid",
+      "nome": "Mauro Cid",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "Tenente-coronel, ex-ajudante de ordens de Bolsonaro (sem filiação); delator da trama golpista."
+    },
+    {
+      "id": "valdemar",
+      "nome": "Valdemar Costa Neto",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "Presidente do PL; condenado no mensalão; investigação na trama golpista reaberta em 2025.",
+      "partido": "pl"
+    },
+    {
+      "id": "wassef",
+      "nome": "Frederick Wassef",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "Advogado da família Bolsonaro; investigado no caso das joias."
+    },
+    {
+      "id": "queiroz",
+      "nome": "Fabrício Queiroz",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "Ex-assessor de Flávio Bolsonaro na Alerj."
+    },
+    {
+      "id": "zambelli",
+      "nome": "Carla Zambelli",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "Ex-deputada federal (PL-SP); duas condenações no STF; está na Itália, onde corre o processo de extradição.",
+      "partido": "pl"
+    },
+    {
+      "id": "silveira",
+      "nome": "Daniel Silveira",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "Ex-deputado federal (PTB-RJ na época); condenado pelo STF em 2022; indulto de Bolsonaro anulado em 2023.",
+      "partido": "ptb"
+    },
+    {
+      "id": "jefferson",
+      "nome": "Roberto Jefferson",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "Ex-deputado e ex-presidente do PTB; delator e condenado no mensalão; condenado de novo pelo STF em 2024.",
+      "partido": "ptb"
+    },
+    {
+      "id": "collor",
+      "nome": "Fernando Collor",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "Ex-presidente e ex-senador (PTB-AL na época); cumpre pena em prisão domiciliar desde 2025.",
+      "partido": "ptb"
+    },
+    {
+      "id": "lira",
+      "nome": "Arthur Lira",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "Deputado (PP-AL), ex-presidente da Câmara (2021–2025).",
+      "partido": "pp"
+    },
+    {
+      "id": "ciro-nogueira",
+      "nome": "Ciro Nogueira",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "Senador (PP-PI), ex-ministro da Casa Civil de Bolsonaro; alvo da Compliance Zero (caso Master).",
+      "partido": "pp"
+    },
+    {
+      "id": "claudio-castro",
+      "nome": "Cláudio Castro",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "Ex-governador do RJ (PL); PF o aponta como líder do núcleo político do caso Rioprevidência/Master.",
+      "partido": "pl"
+    },
+    {
+      "id": "jose-carlos-oliveira",
+      "nome": "José Carlos Oliveira (Ahmed Mohamad Oliveira)",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "Ex-presidente do INSS e ex-ministro do Trabalho e Previdência do governo Bolsonaro; indiciado pela PF no caso INSS."
+    },
+    {
+      "id": "juscelino",
+      "nome": "Juscelino Filho",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "Deputado (União-MA), ex-ministro das Comunicações de Lula; denunciado pela PGR em 2025.",
+      "partido": "uniao"
+    },
+    {
+      "id": "chiquinho-brazao",
+      "nome": "Chiquinho Brazão",
+      "tipo": "pessoa",
+      "lado": "direita",
+      "resumo": "Ex-deputado federal (expulso do União Brasil após a prisão); condenado como mandante do assassinato de Marielle Franco.",
+      "partido": "uniao"
+    },
+    {
+      "id": "domingos-brazao",
+      "nome": "Domingos Brazão",
+      "tipo": "pessoa",
+      "lado": "n-a",
+      "resumo": "Ex-conselheiro do TCE-RJ, irmão de Chiquinho; condenado como mandante do assassinato de Marielle Franco."
+    },
+    {
+      "id": "temer",
+      "nome": "Michel Temer",
+      "tipo": "pessoa",
+      "lado": "centro",
+      "resumo": "Ex-presidente (2016–2018); absolvido ou com ações trancadas nos principais casos.",
+      "partido": "mdb"
+    },
+    {
+      "id": "cunha",
+      "nome": "Eduardo Cunha",
+      "tipo": "pessoa",
+      "lado": "centro",
+      "resumo": "Ex-presidente da Câmara (MDB na época; hoje Republicanos); condenação da Lava Jato anulada em 2023.",
+      "partido": "mdb"
+    },
+    {
+      "id": "geddel",
+      "nome": "Geddel Vieira Lima",
+      "tipo": "pessoa",
+      "lado": "centro",
+      "resumo": "Ex-ministro; condenado pelo STF no caso do bunker de R$ 51 milhões; em liberdade condicional desde 2022.",
+      "partido": "mdb"
+    },
+    {
+      "id": "cabral",
+      "nome": "Sérgio Cabral",
+      "tipo": "pessoa",
+      "lado": "centro",
+      "resumo": "Ex-governador do RJ; dezenas de condenações, parte anulada; em liberdade desde 2022.",
+      "partido": "mdb"
+    },
+    {
+      "id": "aecio",
+      "nome": "Aécio Neves",
+      "tipo": "pessoa",
+      "lado": "centro",
+      "resumo": "Deputado federal (PSDB-MG); absolvido no caso JBS.",
+      "partido": "psdb"
+    },
+    {
+      "id": "serra",
+      "nome": "José Serra",
+      "tipo": "pessoa",
+      "lado": "centro",
+      "resumo": "Ex-senador e ex-governador de SP; ação penal da Lava Jato trancada em 2021.",
+      "partido": "psdb"
+    },
+    {
+      "id": "azeredo",
+      "nome": "Eduardo Azeredo",
+      "tipo": "pessoa",
+      "lado": "centro",
+      "resumo": "Ex-governador de MG; condenação no 'mensalão tucano' suspensa e enviada à Justiça Eleitoral em 2021.",
+      "partido": "psdb"
+    },
+    {
+      "id": "marcos-valerio",
+      "nome": "Marcos Valério",
+      "tipo": "pessoa",
+      "lado": "n-a",
+      "resumo": "Publicitário, operador do mensalão; maior pena da AP 470."
+    },
+    {
+      "id": "marcelo-odebrecht",
+      "nome": "Marcelo Odebrecht",
+      "tipo": "pessoa",
+      "lado": "n-a",
+      "resumo": "Ex-presidente da Odebrecht; atos da Lava Jato contra ele anulados em 2024 (delação mantida)."
+    },
+    {
+      "id": "vorcaro",
+      "nome": "Daniel Vorcaro",
+      "tipo": "pessoa",
+      "lado": "n-a",
+      "resumo": "Dono do Banco Master; preso desde mar/2026 na Operação Compliance Zero."
+    },
+    {
+      "id": "careca-inss",
+      "nome": "Antônio Carlos Camilo Antunes ('Careca do INSS')",
+      "tipo": "pessoa",
+      "lado": "n-a",
+      "resumo": "Lobista apontado pela PF como principal operador das fraudes do INSS; preso."
+    },
+    {
+      "id": "stefanutto",
+      "nome": "Alessandro Stefanutto",
+      "tipo": "pessoa",
+      "lado": "n-a",
+      "resumo": "Servidor de carreira, ex-presidente do INSS no governo Lula; indiciado e preso preventivamente."
+    },
+    {
+      "id": "c-trama-golpista",
+      "nome": "Trama golpista (AP 2668)",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "STF condenou o 'núcleo crucial' por tentativa de golpe de Estado após as eleições de 2022. Penas de 2 a 27 anos; trânsito em julgado em nov/2025. Revisão criminal de Bolsonaro pendente, prevista para depois do 2º turno de 2026."
+    },
+    {
+      "id": "c-coacao-eduardo",
+      "nome": "Coação no curso do processo (AP 2782)",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Eduardo Bolsonaro articulou sanções dos EUA para pressionar o STF no julgamento do pai."
+    },
+    {
+      "id": "c-joias",
+      "nome": "Joias sauditas",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Venda e recompra de joias dadas por Arábia Saudita e Bahrein ao governo. PF indiciou Bolsonaro e 11 em 2024; PGR pediu arquivamento em mar/2026; Moraes devolveu à PGR; sem decisão final."
+    },
+    {
+      "id": "c-vacina",
+      "nome": "Cartão de vacina falso",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Inserção de dados falsos de vacinação de Covid no sistema do Ministério da Saúde. Arquivado para Bolsonaro em mar/2025 por falta de prova além da delação."
+    },
+    {
+      "id": "c-abin-paralela",
+      "nome": "Abin paralela",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Uso da Abin para monitoramento ilegal no governo Bolsonaro. Em jul/2026 Moraes arquivou para Bolsonaro e Ramagem e enviou o restante à Justiça Federal do DF."
+    },
+    {
+      "id": "c-rachadinha",
+      "nome": "'Rachadinha' na Alerj",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Suposto desvio de salários de assessores do gabinete de Flávio Bolsonaro. Denúncia rejeitada em mai/2022 depois que STJ e STF anularam provas."
+    },
+    {
+      "id": "c-dark-horse",
+      "nome": "Inquérito 'Dark Horse'",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Apura financiamento por Vorcaro do filme sobre Bolsonaro; suspeita de lavagem, evasão de divisas e corrupção. PF pediu prorrogação em out/2026."
+    },
+    {
+      "id": "c-master",
+      "nome": "Caso Banco Master (Operação Compliance Zero)",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Fraudes no Banco Master e na tentativa de venda ao BRB; fases atingiram políticos de diferentes partidos e o fundo Rioprevidência."
+    },
+    {
+      "id": "c-inss",
+      "nome": "Fraude do INSS (Operação Sem Desconto)",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Descontos não autorizados em aposentadorias por associações (de 2019 em diante). PF indiciou 48 pessoas em jul/2026; PGR ainda não denunciou."
+    },
+    {
+      "id": "c-triplex",
+      "nome": "Triplex do Guarujá",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Acusação de propina da OAS via triplex. Condenação anulada em 2021 (incompetência de Curitiba e suspeição de Moro); prescreveu no DF."
+    },
+    {
+      "id": "c-atibaia",
+      "nome": "Sítio de Atibaia",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Reformas pagas por OAS e Odebrecht. Condenação anulada em 2021; prescrição reconhecida no DF."
+    },
+    {
+      "id": "c-instituto-lula",
+      "nome": "Instituto Lula (sede e doações)",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Ações anuladas em 2021 com as demais da Lava Jato contra Lula e enviadas ao DF; encerradas."
+    },
+    {
+      "id": "c-lava-jato",
+      "nome": "Lava Jato / Petrolão (ações de Curitiba)",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Desvios na Petrobras por cartel de empreiteiras e partidos. Desde 2021 o STF anulou muitas condenações por incompetência, parcialidade ou provas inválidas."
+    },
+    {
+      "id": "c-br-distribuidora",
+      "nome": "BR Distribuidora (AP 1025)",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Propina de R$ 20 milhões em contratos da BR Distribuidora com a UTC. Collor condenado em 2023."
+    },
+    {
+      "id": "c-ap1003",
+      "nome": "AP 1003 (campanha de Gleisi em 2010)",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Suposto R$ 1 milhão da Petrobras para campanha. Absolvição no STF em 2018."
+    },
+    {
+      "id": "c-mensalao",
+      "nome": "Mensalão (AP 470)",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Compra de apoio no Congresso no 1º governo Lula. Julgado pelo STF em 2012."
+    },
+    {
+      "id": "c-mensalao-tucano",
+      "nome": "Mensalão tucano (MG)",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Desvio de estatais mineiras para a campanha de 1998 de Azeredo."
+    },
+    {
+      "id": "c-jbs-aecio",
+      "nome": "Caso JBS – Aécio",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "R$ 2 milhões pedidos a Joesley Batista. Absolvição em 2022, mantida pelo TRF-3 em 2023."
+    },
+    {
+      "id": "c-quadrilhao-mdb",
+      "nome": "'Quadrilhão do MDB'",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Denúncia por organização criminosa contra a cúpula do MDB. Absolvição sumária em 2021, mantida em 2023."
+    },
+    {
+      "id": "c-mala-jbs",
+      "nome": "Mala de R$ 500 mil (JBS)",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Mala entregue a Rocha Loures. Ação contra Temer trancada; Fachin manteve encerrada em 2024."
+    },
+    {
+      "id": "c-bunker",
+      "nome": "Bunker de R$ 51 milhões",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Dinheiro achado em apartamento em Salvador ligado a Geddel. Condenação por lavagem mantida."
+    },
+    {
+      "id": "c-cabral",
+      "nome": "Esquema Cabral (Calicute e desdobramentos)",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Propinas no governo do RJ. Dezenas de condenações; 3 anuladas em mar/2024."
+    },
+    {
+      "id": "c-serra",
+      "nome": "Lavagem transnacional – Serra",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Lava Jato SP. Ação trancada e provas anuladas por Gilmar Mendes em 2021."
+    },
+    {
+      "id": "c-alckmin",
+      "nome": "Caixa 2 da Odebrecht – Alckmin (2014)",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Ação penal trancada em 2022; ação de improbidade arquivada em 2024, mantida pela 2ª Turma em 2025."
+    },
+    {
+      "id": "c-marielle",
+      "nome": "Assassinato de Marielle Franco e Anderson Gomes",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "STF condenou os mandantes em fev/2026; embargos rejeitados em jun/2026."
+    },
+    {
+      "id": "c-zambelli-cnj",
+      "nome": "Invasão dos sistemas do CNJ",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Inserção de documentos falsos, como mandado de prisão contra Moraes, com o hacker Walter Delgatti."
+    },
+    {
+      "id": "c-zambelli-arma",
+      "nome": "Perseguição armada em SP (2022)",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Zambelli perseguiu um homem com arma na véspera do 2º turno de 2022."
+    },
+    {
+      "id": "c-silveira",
+      "nome": "Ataques ao STF – Daniel Silveira (AP 1044)",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Coação no curso do processo e ameaças ao STF."
+    },
+    {
+      "id": "c-jefferson",
+      "nome": "Incitação contra Poderes – Jefferson (AP 2493)",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Incitação à violência contra a CPI da Covid e o TSE, calúnia e homofobia."
+    },
+    {
+      "id": "c-codevasf",
+      "nome": "Emendas da Codevasf – Juscelino Filho",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Suposto desvio de emendas para pavimentação em Vitorino Freire (MA)."
+    },
+    {
+      "id": "c-lira-cbtu",
+      "nome": "Propina da CBTU – Lira (Inq 3515)",
+      "tipo": "caso",
+      "lado": "n-a",
+      "resumo": "Suposta propina de R$ 106 mil. Denúncia rejeitada em 2023 a pedido da própria PGR."
+    }
+  ],
+  "edges": [
+    {
+      "de": "bolsonaro",
+      "para": "c-trama-golpista",
+      "status": "condenado",
+      "descricao": "Condenado a 27 anos e 3 meses (1ª Turma, 4 a 1). Trânsito em julgado em 25/11/2025. Prisão domiciliar humanitária desde 24/03/2026, mantida sem prazo em jul/2026. Revisão criminal pendente.",
+      "data": "2025-11-25",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-fixa-penas-de-16-a-27-anos-para-condenados-por-tentativa-de-golpe-de-estado/",
+        "https://noticias.stf.jus.br/postsnoticias/stf-condena-os-oito-reus-da-acao-por-golpe-de-estado/",
+        "https://agenciabrasil.ebc.com.br/justica/noticia/2025-11/stf-determina-execucao-das-penas-de-bolsonaro-e-mais-reus-do-nucleo-1",
+        "https://g1.globo.com/politica/noticia/2026/03/24/moraes-autoriza-prisao-domiciliar-para-jair-bolsonaro.ghtml",
+        "https://agenciabrasil.ebc.com.br/justica/noticia/2026-10/stf-deve-julgar-revisao-da-condenacao-de-bolsonaro-apos-eleicoes"
+      ]
+    },
+    {
+      "de": "braga-netto",
+      "para": "c-trama-golpista",
+      "status": "condenado",
+      "descricao": "Condenado a 26 anos.",
+      "data": "2025-09-11",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-fixa-penas-de-16-a-27-anos-para-condenados-por-tentativa-de-golpe-de-estado/",
+        "https://noticias.stf.jus.br/postsnoticias/stf-condena-os-oito-reus-da-acao-por-golpe-de-estado/",
+        "https://agenciabrasil.ebc.com.br/justica/noticia/2025-11/stf-determina-execucao-das-penas-de-bolsonaro-e-mais-reus-do-nucleo-1"
+      ]
+    },
+    {
+      "de": "heleno",
+      "para": "c-trama-golpista",
+      "status": "condenado",
+      "descricao": "Condenado a 21 anos.",
+      "data": "2025-09-11",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-fixa-penas-de-16-a-27-anos-para-condenados-por-tentativa-de-golpe-de-estado/",
+        "https://noticias.stf.jus.br/postsnoticias/stf-condena-os-oito-reus-da-acao-por-golpe-de-estado/",
+        "https://agenciabrasil.ebc.com.br/justica/noticia/2025-11/stf-determina-execucao-das-penas-de-bolsonaro-e-mais-reus-do-nucleo-1"
+      ]
+    },
+    {
+      "de": "ramagem",
+      "para": "c-trama-golpista",
+      "status": "condenado",
+      "descricao": "Condenado a 16 anos, 1 mês e 15 dias; segue foragido.",
+      "data": "2025-09-11",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-fixa-penas-de-16-a-27-anos-para-condenados-por-tentativa-de-golpe-de-estado/",
+        "https://noticias.stf.jus.br/postsnoticias/stf-condena-os-oito-reus-da-acao-por-golpe-de-estado/",
+        "https://agenciabrasil.ebc.com.br/justica/noticia/2025-11/stf-determina-execucao-das-penas-de-bolsonaro-e-mais-reus-do-nucleo-1"
+      ]
+    },
+    {
+      "de": "mauro-cid",
+      "para": "c-trama-golpista",
+      "status": "condenado",
+      "descricao": "Delator; pena de 2 anos em regime aberto, cumprida desde nov/2025.",
+      "data": "2025-09-11",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/confira-como-foram-calculadas-as-penas-no-julgamento-sobre-tentativa-de-golpe/",
+        "https://g1.globo.com/politica/noticia/2025/09/11/primeira-turma-do-stf-define-pena-de-2-anos-em-regime-para-cid-na-trama-golpista.ghtml"
+      ]
+    },
+    {
+      "de": "valdemar",
+      "para": "c-trama-golpista",
+      "status": "investigado",
+      "descricao": "Indiciado pela PF, ficou fora da denúncia da PGR (fev/2025); a 1ª Turma reabriu a investigação contra ele em out/2025.",
+      "data": "2025-10-21",
+      "fontes": [
+        "https://www1.folha.uol.com.br/poder/2025/02/valdemar-argentino-padre-e-4-coroneis-indiciados-pela-pf-ficam-fora-de-denuncia-da-pgr.shtml",
+        "https://g1.globo.com/politica/noticia/2025/10/21/stf-decide-reabrir-investigacao-de-valdemar-costa-neto-na-tentativa-de-golpe-de-estado.ghtml"
+      ]
+    },
+    {
+      "de": "eduardo",
+      "para": "c-coacao-eduardo",
+      "status": "condenado",
+      "descricao": "Condenado por unanimidade a 4 anos e 2 meses em regime semiaberto (jun/2026); embargos rejeitados em 18/09/2026.",
+      "data": "2026-09-18",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-condena-eduardo-bolsonaro-a-4-anos-e-2-meses-de-reclusao-por-tentar-interferir-no-processo-sobre-tentativa-de-golpe/",
+        "https://conjur.com.br/2026-set-19/stf-mantem-condenacao-de-eduardo-bolsonaro-por-coacao-no-curso-do-processo/",
+        "https://agenciabrasil.ebc.com.br/justica/noticia/2026-02/stf-formaliza-acao-que-tornou-eduardo-bolsonaro-reu-na-corte"
+      ]
+    },
+    {
+      "de": "bolsonaro",
+      "para": "c-coacao-eduardo",
+      "status": "investigado",
+      "descricao": "Indiciado pela PF no mesmo inquérito, mas não incluído na denúncia da PGR.",
+      "data": "2025-09",
+      "fontes": [
+        "https://cbn.globo.com/politica/noticia/2026/02/20/stf-abre-acao-penal-e-torna-eduardo-bolsonaro-reu-por-obstrucao-de-justica-e-coacao.ghtml"
+      ]
+    },
+    {
+      "de": "bolsonaro",
+      "para": "c-joias",
+      "status": "investigado",
+      "descricao": "Indiciado pela PF (jul/2024) por peculato, lavagem e associação criminosa. PGR pediu arquivamento em 05/03/2026; Moraes devolveu à PGR em 19/03/2026. Sem decisão final.",
+      "data": "2026-03-19",
+      "fontes": [
+        "https://g1.globo.com/politica/noticia/2026/03/05/pgr-pede-arquivamento-de-investigacao-sobre-joias-de-bolsonaro.ghtml",
+        "https://g1.globo.com/politica/noticia/2026/03/19/caso-das-joias-moraes-pede-que-pgr-analise-material-sobre-wassef-antes-de-avaliar-arquivamento.ghtml",
+        "https://www.gp1.com.br/brasil/noticia/2026/9/21/moraes-determina-que-stf-envie-provas-do-caso-das-joias-sauditas-a-receita-federal-631964.html"
+      ]
+    },
+    {
+      "de": "mauro-cid",
+      "para": "c-joias",
+      "status": "investigado",
+      "descricao": "Indiciado pela PF; vendeu nos EUA um Rolex do acervo.",
+      "data": "2024-07",
+      "fontes": [
+        "https://g1.globo.com/politica/noticia/2026/03/05/pgr-pede-arquivamento-de-investigacao-sobre-joias-de-bolsonaro.ghtml",
+        "https://g1.globo.com/politica/noticia/2026/03/19/caso-das-joias-moraes-pede-que-pgr-analise-material-sobre-wassef-antes-de-avaliar-arquivamento.ghtml"
+      ]
+    },
+    {
+      "de": "wassef",
+      "para": "c-joias",
+      "status": "investigado",
+      "descricao": "Indiciado pela PF; recomprou o Rolex nos EUA. Moraes pediu manifestação específica da PGR sobre ele.",
+      "data": "2026-03-19",
+      "fontes": [
+        "https://g1.globo.com/politica/noticia/2026/03/05/pgr-pede-arquivamento-de-investigacao-sobre-joias-de-bolsonaro.ghtml",
+        "https://g1.globo.com/politica/noticia/2026/03/19/caso-das-joias-moraes-pede-que-pgr-analise-material-sobre-wassef-antes-de-avaliar-arquivamento.ghtml"
+      ]
+    },
+    {
+      "de": "bolsonaro",
+      "para": "c-vacina",
+      "status": "arquivado",
+      "descricao": "Indiciado pela PF em mar/2024; arquivado por Moraes a pedido da PGR em 28/03/2025 por falta de provas além da delação de Cid. Pode ser reaberto se surgirem provas novas.",
+      "data": "2025-03-28",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-arquiva-investigacao-contra-ex-presidente-da-republica-por-fraude-em-cartao-de-vacina/",
+        "https://agenciabrasil.ebc.com.br/justica/noticia/2025-03/cartao-de-vacina-moraes-arquiva-investigacao-contra-bolsonaro"
+      ]
+    },
+    {
+      "de": "mauro-cid",
+      "para": "c-vacina",
+      "status": "investigado",
+      "descricao": "Indiciado pela PF; delator. A parte dos investigados sem foro foi enviada à Justiça Federal do DF.",
+      "data": "2025-03-28",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-arquiva-investigacao-contra-ex-presidente-da-republica-por-fraude-em-cartao-de-vacina/"
+      ]
+    },
+    {
+      "de": "bolsonaro",
+      "para": "c-abin-paralela",
+      "status": "arquivado",
+      "descricao": "Arquivado em 20/07/2026 por já ter sido condenado pelos fatos conexos na AP 2668.",
+      "data": "2026-07-20",
+      "fontes": [
+        "https://valor.globo.com/politica/noticia/2026/07/20/moraes-arquiva-inquerito-contra-bolsonaro-e-ramagem-no-caso-de-abin-paralela.ghtml",
+        "https://www.cnnbrasil.com.br/politica/investigacao-contra-carlos-e-antiga-cupula-da-abin-segue-na-1a-instancia/",
+        "https://g1.globo.com/politica/noticia/2026/06/18/abin-paralela-pgr-defende-que-investigacao-saia-do-stf-e-seja-transferida-para-a-primeira-instancia.ghtml"
+      ]
+    },
+    {
+      "de": "ramagem",
+      "para": "c-abin-paralela",
+      "status": "arquivado",
+      "descricao": "Arquivado em 20/07/2026 pelo mesmo motivo.",
+      "data": "2026-07-20",
+      "fontes": [
+        "https://valor.globo.com/politica/noticia/2026/07/20/moraes-arquiva-inquerito-contra-bolsonaro-e-ramagem-no-caso-de-abin-paralela.ghtml",
+        "https://www.cnnbrasil.com.br/politica/investigacao-contra-carlos-e-antiga-cupula-da-abin-segue-na-1a-instancia/",
+        "https://g1.globo.com/politica/noticia/2026/06/18/abin-paralela-pgr-defende-que-investigacao-saia-do-stf-e-seja-transferida-para-a-primeira-instancia.ghtml"
+      ]
+    },
+    {
+      "de": "carlos",
+      "para": "c-abin-paralela",
+      "status": "investigado",
+      "descricao": "Investigação segue na Justiça Federal do DF; sem denúncia.",
+      "data": "2026-07-20",
+      "fontes": [
+        "https://valor.globo.com/politica/noticia/2026/07/20/moraes-arquiva-inquerito-contra-bolsonaro-e-ramagem-no-caso-de-abin-paralela.ghtml",
+        "https://www.cnnbrasil.com.br/politica/investigacao-contra-carlos-e-antiga-cupula-da-abin-segue-na-1a-instancia/",
+        "https://g1.globo.com/politica/noticia/2026/06/18/abin-paralela-pgr-defende-que-investigacao-saia-do-stf-e-seja-transferida-para-a-primeira-instancia.ghtml"
+      ]
+    },
+    {
+      "de": "flavio",
+      "para": "c-rachadinha",
+      "status": "arquivado",
+      "descricao": "Denunciado pelo MP-RJ em 2020. O TJ-RJ rejeitou a denúncia em 16/05/2022, a pedido do próprio MP, depois que as provas foram anuladas. Nova investigação não está proibida; em set/2026 houve pedido de reabertura, sem investigação instaurada.",
+      "data": "2022-05-16",
+      "fontes": [
+        "https://g1.globo.com/rj/rio-de-janeiro/noticia/2022/05/16/tj-rj-rejeita-denuncia-contra-flavio-bolsonaro-no-caso-das-rachadinhas.ghtml",
+        "https://agenciabrasil.ebc.com.br/politica/noticia/2022-05/justica-do-rio-arquiva-processo-de-caso-de-supostas-rachadinhas"
+      ]
+    },
+    {
+      "de": "queiroz",
+      "para": "c-rachadinha",
+      "status": "arquivado",
+      "descricao": "Denunciado com Flávio em 2020; a denúncia foi rejeitada em 2022.",
+      "data": "2022-05-16",
+      "fontes": [
+        "https://g1.globo.com/rj/rio-de-janeiro/noticia/2022/05/16/tj-rj-rejeita-denuncia-contra-flavio-bolsonaro-no-caso-das-rachadinhas.ghtml",
+        "https://agenciabrasil.ebc.com.br/politica/noticia/2022-05/justica-do-rio-arquiva-processo-de-caso-de-supostas-rachadinhas"
+      ]
+    },
+    {
+      "de": "flavio",
+      "para": "c-dark-horse",
+      "status": "investigado",
+      "descricao": "Investigado no STF (relator André Mendonça); a PF pediu mais 90 dias em 16/10/2026.",
+      "data": "2026-10-16",
+      "fontes": [
+        "https://g1.globo.com/politica/noticia/2026/09/11/flavio-bolsonaro-e-investigado-em-inquerito-da-pf-aberto-para-apurar-financiamento-do-filme-dark-horse.ghtml",
+        "https://g1.globo.com/politica/noticia/2026/10/16/caso-dark-horse-pf-pede-a-andre-mendonca-prorrogacao-do-inquerito-por-90-dias.ghtml",
+        "https://g1.globo.com/politica/noticia/2026/10/17/dark-horse-pf-aponta-divergencia-severa-entre-recursos-enviados-ao-exterior-e-os-que-retornaram-ao-brasil-para-filme-sobre-bolsonaro.ghtml"
+      ]
+    },
+    {
+      "de": "vorcaro",
+      "para": "c-dark-horse",
+      "status": "investigado",
+      "descricao": "Apontado como financiador do filme.",
+      "data": "2026-09-11",
+      "fontes": [
+        "https://g1.globo.com/politica/noticia/2026/09/11/flavio-bolsonaro-e-investigado-em-inquerito-da-pf-aberto-para-apurar-financiamento-do-filme-dark-horse.ghtml",
+        "https://g1.globo.com/politica/noticia/2026/10/16/caso-dark-horse-pf-pede-a-andre-mendonca-prorrogacao-do-inquerito-por-90-dias.ghtml",
+        "https://g1.globo.com/politica/noticia/2026/10/17/dark-horse-pf-aponta-divergencia-severa-entre-recursos-enviados-ao-exterior-e-os-que-retornaram-ao-brasil-para-filme-sobre-bolsonaro.ghtml"
+      ]
+    },
+    {
+      "de": "vorcaro",
+      "para": "c-master",
+      "status": "investigado",
+      "descricao": "Preso desde mar/2026; nega fraude e pede revogação da prisão. Sem denúncia até agora.",
+      "data": "2026-10-15",
+      "fontes": [
+        "https://g1.globo.com/df/distrito-federal/noticia/2026/10/15/pf-ouve-vorcaro-e-paulo-henrique-costa-ex-presidente-do-brb-em-inquerito-sobre-o-banco-master.ghtml",
+        "https://www.bbc.com/portuguese/articles/cp322yglvpjo"
+      ]
+    },
+    {
+      "de": "banco-master",
+      "para": "c-master",
+      "status": "investigado",
+      "descricao": "Banco liquidado pelo Banco Central em nov/2025.",
+      "data": "2025-11",
+      "fontes": [
+        "https://www.bbc.com/portuguese/articles/cp322yglvpjo"
+      ]
+    },
+    {
+      "de": "ciro-nogueira",
+      "para": "c-master",
+      "status": "investigado",
+      "descricao": "Alvo da 5ª fase (07/05/2026). A PF suspeita de pagamentos mensais e de uma 'emenda Master' à PEC 65/2023. Ele nega.",
+      "data": "2026-05-07",
+      "fontes": [
+        "https://g1.globo.com/politica/noticia/2026/05/07/pf-faz-nova-operacao-caso-master.ghtml",
+        "https://g1.globo.com/politica/noticia/2026/05/07/caso-master-ciro-nogueira-teria-recebido-vantagens-indevidas-de-vorcaro-em-troca-de-apoio-diz-pf.ghtml",
+        "https://www.bbc.com/portuguese/articles/clyp32n138po"
+      ]
+    },
+    {
+      "de": "jaques-wagner",
+      "para": "c-master",
+      "status": "investigado",
+      "descricao": "Alvo da 9ª fase (18/06/2026) por supostos repasses, apartamento e atuação a favor do banco. Ele nega.",
+      "data": "2026-06-18",
+      "fontes": [
+        "https://g1.globo.com/politica/noticia/2026/06/18/banco-master-9a-fase-da-operacao-compliance-zero.ghtml"
+      ]
+    },
+    {
+      "de": "claudio-castro",
+      "para": "c-master",
+      "status": "investigado",
+      "descricao": "Relatório da PF (set/2026) o aponta, com Vorcaro, como líder do esquema que direcionou cerca de R$ 3,7 bi do Rioprevidência ao Master. Ele nega.",
+      "data": "2026-09-12",
+      "fontes": [
+        "https://cbn.globo.com/politica/noticia/2026/09/12/pf-diz-que-castro-e-vorcaro-lideraram-organizacao-criminosa-para-direcionar-recursos-do-rioprevidencia-ao-master.ghtml",
+        "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/05/26/compliance-zero-investigacao-rioprevidencia.ghtml"
+      ]
+    },
+    {
+      "de": "careca-inss",
+      "para": "c-inss",
+      "status": "investigado",
+      "descricao": "Indiciado pela PF em jul/2026 e preso; PGR ainda decide se denuncia.",
+      "data": "2026-07-14",
+      "fontes": [
+        "https://g1.globo.com/jornal-nacional/noticia/2026/07/14/fraude-do-inss-policia-federal-indicia-dois-ex-presidentes-do-instituto-e-mais-46-pessoas.ghtml"
+      ]
+    },
+    {
+      "de": "stefanutto",
+      "para": "c-inss",
+      "status": "investigado",
+      "descricao": "Indiciado; segundo a PF, recebeu R$ 250 mil por mês em 2023–2024. Preso desde nov/2025; PGR opinou pela soltura com cautelares.",
+      "data": "2026-07-14",
+      "fontes": [
+        "https://g1.globo.com/jornal-nacional/noticia/2026/07/14/fraude-do-inss-policia-federal-indicia-dois-ex-presidentes-do-instituto-e-mais-46-pessoas.ghtml",
+        "https://www.terra.com.br/noticias/brasil/politica/pgr-pede-revogacao-de-prisao-preventiva-de-stefanutto-processos-estao-parados-no-stf,772d4aab8ba5ed69f42c03ffaf6b7c2abr2xaw0j.html"
+      ]
+    },
+    {
+      "de": "jose-carlos-oliveira",
+      "para": "c-inss",
+      "status": "investigado",
+      "descricao": "Ex-presidente do INSS e ex-ministro de Bolsonaro, indiciado pela PF.",
+      "data": "2026-07-14",
+      "fontes": [
+        "https://g1.globo.com/jornal-nacional/noticia/2026/07/14/fraude-do-inss-policia-federal-indicia-dois-ex-presidentes-do-instituto-e-mais-46-pessoas.ghtml"
+      ]
+    },
+    {
+      "de": "lupi",
+      "para": "c-inss",
+      "status": "citado",
+      "descricao": "Depôs à CPMI e negou envolvimento; não foi indiciado pela PF.",
+      "data": "2025-09-08",
+      "fontes": [
+        "https://www12.senado.leg.br/noticias/materias/2025/09/08/carlos-lupi-nega-envolvimento-em-fraudes-no-inss-no-depoimento-a-cpmi"
+      ]
+    },
+    {
+      "de": "frei-chico",
+      "para": "c-inss",
+      "status": "citado",
+      "descricao": "Ex-vice-presidente do Sindnapi, entidade investigada; não é alvo da PF. A CPMI rejeitou convocá-lo.",
+      "data": "2025-10",
+      "fontes": [
+        "https://www.bbc.com/portuguese/articles/cj69rj80g00o"
+      ]
+    },
+    {
+      "de": "lulinha",
+      "para": "c-inss",
+      "status": "citado",
+      "descricao": "Pagamentos de R$ 1,5 mi do 'Careca' a uma empresária próxima a ele; não é investigado pela PF.",
+      "data": "2025-12-18",
+      "fontes": [
+        "https://www.bbc.com/portuguese/articles/cj69rj80g00o"
+      ]
+    },
+    {
+      "de": "lula",
+      "para": "c-triplex",
+      "status": "anulado",
+      "descricao": "Condenado por Moro (2017); STJ fixou 8 anos e 10 meses (2019). STF anulou em 2021 (HC 193726) e declarou Moro parcial; o caso prescreveu no DF.",
+      "data": "2021-06-23",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-confirma-anulacao-de-condenacoes-do-ex-presidente-lula-na-lava-jato/",
+        "https://noticias.stf.jus.br/postsnoticias/plenario-fixa-competencia-da-justica-federal-do-df-para-julgar-processos-contra-ex-presidente-lula/",
+        "https://noticias.stf.jus.br/postsnoticias/stf-confirma-suspeicao-de-sergio-moro-na-acao-do-triplex-do-guaruja/"
+      ]
+    },
+    {
+      "de": "oas",
+      "para": "c-triplex",
+      "status": "citado",
+      "descricao": "Acusada de pagar a propina por meio do imóvel.",
+      "data": "2017-07-12",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-confirma-anulacao-de-condenacoes-do-ex-presidente-lula-na-lava-jato/",
+        "https://noticias.stf.jus.br/postsnoticias/plenario-fixa-competencia-da-justica-federal-do-df-para-julgar-processos-contra-ex-presidente-lula/"
+      ]
+    },
+    {
+      "de": "lula",
+      "para": "c-atibaia",
+      "status": "anulado",
+      "descricao": "Condenado em 2ª instância a 17 anos e 1 mês; anulado em 2021; prescrição reconhecida no DF.",
+      "data": "2021-04-15",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-confirma-anulacao-de-condenacoes-do-ex-presidente-lula-na-lava-jato/",
+        "https://noticias.stf.jus.br/postsnoticias/plenario-fixa-competencia-da-justica-federal-do-df-para-julgar-processos-contra-ex-presidente-lula/"
+      ]
+    },
+    {
+      "de": "odebrecht",
+      "para": "c-atibaia",
+      "status": "citado",
+      "descricao": "Acusada de pagar parte das reformas.",
+      "data": "2019",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-confirma-anulacao-de-condenacoes-do-ex-presidente-lula-na-lava-jato/",
+        "https://noticias.stf.jus.br/postsnoticias/plenario-fixa-competencia-da-justica-federal-do-df-para-julgar-processos-contra-ex-presidente-lula/"
+      ]
+    },
+    {
+      "de": "oas",
+      "para": "c-atibaia",
+      "status": "citado",
+      "descricao": "Acusada de pagar parte das reformas.",
+      "data": "2019",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-confirma-anulacao-de-condenacoes-do-ex-presidente-lula-na-lava-jato/",
+        "https://noticias.stf.jus.br/postsnoticias/plenario-fixa-competencia-da-justica-federal-do-df-para-julgar-processos-contra-ex-presidente-lula/"
+      ]
+    },
+    {
+      "de": "lula",
+      "para": "c-instituto-lula",
+      "status": "anulado",
+      "descricao": "Anulado em 2021 com as demais ações de Curitiba; encerrado depois no DF, sem ação ativa.",
+      "data": "2021-04-15",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-confirma-anulacao-de-condenacoes-do-ex-presidente-lula-na-lava-jato/",
+        "https://noticias.stf.jus.br/postsnoticias/plenario-fixa-competencia-da-justica-federal-do-df-para-julgar-processos-contra-ex-presidente-lula/"
+      ]
+    },
+    {
+      "de": "dirceu",
+      "para": "c-lava-jato",
+      "status": "anulado",
+      "descricao": "Gilmar Mendes anulou os atos de Moro em 28/10/2024; o STJ declarou prescrição em 17/12/2024.",
+      "data": "2024-12-17",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-anula-atos-processuais-de-duas-acoes-penais-contra-jose-dirceu/",
+        "https://g1.globo.com/politica/noticia/2024/12/17/apos-decisao-de-gilmar-mendes-stj-encerra-duas-acoes-da-lava-jato-contra-jose-dirceu.ghtml"
+      ]
+    },
+    {
+      "de": "palocci",
+      "para": "c-lava-jato",
+      "status": "anulado",
+      "descricao": "Toffoli anulou os atos em fev/2025; a 2ª Turma manteve por 3 a 2 em ago/2025. A delação continua válida.",
+      "data": "2025-08-15",
+      "fontes": [
+        "https://g1.globo.com/politica/noticia/2025/02/19/toffoli-anula-processos-contra-ex-ministro-antonio-palocci-na-operacao-lava-jato.ghtml",
+        "https://g1.globo.com/politica/noticia/2025/08/15/stf-mantem-anulacao-de-atos-da-lava-jato-contra-palocci-por-3-a-2.ghtml"
+      ]
+    },
+    {
+      "de": "cunha",
+      "para": "c-lava-jato",
+      "status": "anulado",
+      "descricao": "Condenação de quase 16 anos anulada em mai/2023 e enviada à Justiça Eleitoral; outras ações continuam na Justiça Eleitoral e na Justiça Federal.",
+      "data": "2023-05-29",
+      "fontes": [
+        "https://g1.globo.com/politica/noticia/2023/05/29/stf-anula-condenacao-de-cunha-a-quase-16-anos-de-prisao-na-lava-jato.ghtml",
+        "https://noticias.stf.jus.br/postsnoticias/stf-mantem-tramitacao-de-acoes-penais-contra-ex-deputado-eduardo-cunha/"
+      ]
+    },
+    {
+      "de": "marcelo-odebrecht",
+      "para": "c-lava-jato",
+      "status": "anulado",
+      "descricao": "Toffoli anulou os atos em mai/2024; a 2ª Turma manteve em set/2024. A delação continua válida.",
+      "data": "2024-09",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-mantem-nulidade-de-atos-da-lava-jato-contra-marcelo-odebrecht/",
+        "https://oglobo.globo.com/politica/noticia/2024/05/22/confira-perguntas-e-respostas-sobre-decisao-de-toffoli-que-favoreceu-marcelo-odebrecht.ghtml"
+      ]
+    },
+    {
+      "de": "odebrecht",
+      "para": "c-lava-jato",
+      "status": "anulado",
+      "descricao": "Provas dos sistemas Drousys e MyWebDay, vindas da leniência, foram declaradas nulas pelo STF em todas as ações (2023).",
+      "data": "2023-09-06",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-anula-todas-as-provas-obtidas-em-sistemas-da-odebrecht-em-todas-as-esferas-e-para-todas-as-acoes/"
+      ]
+    },
+    {
+      "de": "collor",
+      "para": "c-br-distribuidora",
+      "status": "condenado",
+      "descricao": "Condenado a 8 anos e 10 meses por corrupção passiva e lavagem (mai/2023). Pena em execução desde abr/2025, em domiciliar humanitária.",
+      "data": "2025-04",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-condena-collor-a-oito-anos-e-dez-meses-por-crimes-contra-br-distribuidora/",
+        "https://noticias.stf.jus.br/postsnoticias/stf-confirma-cumprimento-imediato-da-pena-do-ex-presidente-fernando-collor/",
+        "https://www1.folha.uol.com.br/poder/2026/05/collor-preso-ha-1-ano-vira-trunfo-para-bolsonaro-mas-e-deixado-de-lado-na-politica-de-alagoas.shtml"
+      ]
+    },
+    {
+      "de": "utc",
+      "para": "c-br-distribuidora",
+      "status": "citado",
+      "descricao": "Contratos com a BR Distribuidora que originaram a propina.",
+      "data": "2023-05-31",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-condena-collor-a-oito-anos-e-dez-meses-por-crimes-contra-br-distribuidora/"
+      ]
+    },
+    {
+      "de": "gleisi",
+      "para": "c-ap1003",
+      "status": "arquivado",
+      "descricao": "Ré no STF; absolvida pela 2ª Turma em 19/06/2018 de corrupção e lavagem.",
+      "data": "2018-06-19",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/2a-turma-julga-improcedente-acao-penal-contra-senadora-gleisi-hoffmann/",
+        "https://g1.globo.com/politica/noticia/stf-absolve-senadora-gleisi-hoffmann-e-ex-ministro-paulo-bernardo-dos-crimes-de-corrupcao-e-lavagem.ghtml"
+      ],
+      "desfecho": "absolvido"
+    },
+    {
+      "de": "dirceu",
+      "para": "c-mensalao",
+      "status": "condenado",
+      "descricao": "Condenado por corrupção ativa. Absolvido de formação de quadrilha em 2014; pena já extinta.",
+      "data": "2012-12-17",
+      "fontes": [
+        "https://g1.globo.com/politica/mensalao/noticia/2012/12/supremo-conclui-julgamento-do-mensalao-apos-quatro-meses-e-meio.html",
+        "https://noticias.stf.jus.br/postsnoticias/ap-470-stf-fixa-penas-do-nucleo-politico-e-inicia-analise-de-dosimetria-quanto-ao-nucleo-financeiro/",
+        "https://www.camara.leg.br/tv/427795-stf-absolve-oito-condenados-do-mensalao-do-crime-de-formacao-de-quadrilha/"
+      ]
+    },
+    {
+      "de": "genoino",
+      "para": "c-mensalao",
+      "status": "condenado",
+      "descricao": "Condenado por corrupção ativa; quadrilha afastada em 2014.",
+      "data": "2012-12-17",
+      "fontes": [
+        "https://g1.globo.com/politica/mensalao/noticia/2012/12/supremo-conclui-julgamento-do-mensalao-apos-quatro-meses-e-meio.html",
+        "https://noticias.stf.jus.br/postsnoticias/ap-470-stf-fixa-penas-do-nucleo-politico-e-inicia-analise-de-dosimetria-quanto-ao-nucleo-financeiro/"
+      ]
+    },
+    {
+      "de": "delubio",
+      "para": "c-mensalao",
+      "status": "condenado",
+      "descricao": "Condenado por corrupção ativa; quadrilha afastada em 2014.",
+      "data": "2012-12-17",
+      "fontes": [
+        "https://g1.globo.com/politica/mensalao/noticia/2012/12/supremo-conclui-julgamento-do-mensalao-apos-quatro-meses-e-meio.html",
+        "https://noticias.stf.jus.br/postsnoticias/ap-470-stf-fixa-penas-do-nucleo-politico-e-inicia-analise-de-dosimetria-quanto-ao-nucleo-financeiro/"
+      ]
+    },
+    {
+      "de": "marcos-valerio",
+      "para": "c-mensalao",
+      "status": "condenado",
+      "descricao": "Maior pena: 40 anos, 2 meses e 10 dias.",
+      "data": "2012-12-17",
+      "fontes": [
+        "https://g1.globo.com/politica/mensalao/noticia/2012/12/supremo-conclui-julgamento-do-mensalao-apos-quatro-meses-e-meio.html",
+        "https://noticias.stf.jus.br/postsnoticias/ap-470-stf-fixa-penas-do-nucleo-politico-e-inicia-analise-de-dosimetria-quanto-ao-nucleo-financeiro/"
+      ]
+    },
+    {
+      "de": "valdemar",
+      "para": "c-mensalao",
+      "status": "condenado",
+      "descricao": "Condenado por corrupção passiva e lavagem (então no PR, atual PL).",
+      "data": "2012-12-17",
+      "fontes": [
+        "https://g1.globo.com/politica/mensalao/noticia/2012/12/supremo-conclui-julgamento-do-mensalao-apos-quatro-meses-e-meio.html",
+        "https://noticias.stf.jus.br/postsnoticias/ap-470-stf-fixa-penas-do-nucleo-politico-e-inicia-analise-de-dosimetria-quanto-ao-nucleo-financeiro/"
+      ]
+    },
+    {
+      "de": "jefferson",
+      "para": "c-mensalao",
+      "status": "condenado",
+      "descricao": "Delator do esquema; condenado por corrupção passiva e lavagem.",
+      "data": "2012-12-17",
+      "fontes": [
+        "https://g1.globo.com/politica/mensalao/noticia/2012/12/supremo-conclui-julgamento-do-mensalao-apos-quatro-meses-e-meio.html",
+        "https://noticias.stf.jus.br/postsnoticias/ap-470-stf-fixa-penas-do-nucleo-politico-e-inicia-analise-de-dosimetria-quanto-ao-nucleo-financeiro/"
+      ]
+    },
+    {
+      "de": "azeredo",
+      "para": "c-mensalao-tucano",
+      "status": "anulado",
+      "descricao": "Condenado a 15 anos e 7 meses (pena fixada pelo STJ); o STF suspendeu a condenação em jun/2021 e mandou o caso à Justiça Eleitoral de MG.",
+      "data": "2021-06-29",
+      "fontes": [
+        "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/STJ-confirma-condenacao-de-Eduardo-Azeredo-e-redimensiona-pena-para-15-anos-e-sete-meses.aspx",
+        "https://www1.folha.uol.com.br/poder/2021/06/supremo-suspende-condenacao-de-ex-governador-eduardo-azeredo-no-mensalao-do-psdb.shtml"
+      ]
+    },
+    {
+      "de": "aecio",
+      "para": "c-jbs-aecio",
+      "status": "arquivado",
+      "descricao": "Absolvido em 1ª instância (2022); o TRF-3 manteve por unanimidade em 27/07/2023.",
+      "data": "2023-07-27",
+      "fontes": [
+        "https://g1.globo.com/sp/sao-paulo/noticia/2023/07/27/justica-mantem-absolvicao-de-aecio-neves-da-acusacao-de-corrupcao-passiva.ghtml",
+        "https://www1.folha.uol.com.br/poder/2023/07/justica-mantem-absolvicao-de-aecio-em-acusacao-de-corrupcao-no-caso-jbs.shtml"
+      ],
+      "desfecho": "absolvido"
+    },
+    {
+      "de": "jbs",
+      "para": "c-jbs-aecio",
+      "status": "citado",
+      "descricao": "Joesley Batista fez a gravação e a delação que originaram o caso.",
+      "data": "2017",
+      "fontes": [
+        "https://oglobo.globo.com/politica/noticia/2023/07/27/aecio-neves-e-absolvido-pelo-trf-3-de-corrupcao-passiva-em-caso-envolvendo-acusacao-de-joesley-batista.ghtml"
+      ]
+    },
+    {
+      "de": "temer",
+      "para": "c-quadrilhao-mdb",
+      "status": "arquivado",
+      "descricao": "Absolvição sumária em 2021, mantida pelo TRF-1 em mar/2023.",
+      "data": "2023-03-07",
+      "fontes": [
+        "https://www1.folha.uol.com.br/colunas/monicabergamo/2023/03/justica-mantem-absolvicao-de-cunha-temer-geddel-e-yunes-no-caso-quadrilhao-do-mdb.shtml",
+        "https://oglobo.globo.com/politica/juiz-federal-absolve-temer-ex-deputados-no-quadrilhao-do-mdb-25004931"
+      ],
+      "desfecho": "absolvido"
+    },
+    {
+      "de": "cunha",
+      "para": "c-quadrilhao-mdb",
+      "status": "arquivado",
+      "descricao": "Absolvição sumária em 2021, mantida pelo TRF-1 em mar/2023.",
+      "data": "2023-03-07",
+      "fontes": [
+        "https://www1.folha.uol.com.br/colunas/monicabergamo/2023/03/justica-mantem-absolvicao-de-cunha-temer-geddel-e-yunes-no-caso-quadrilhao-do-mdb.shtml",
+        "https://oglobo.globo.com/politica/juiz-federal-absolve-temer-ex-deputados-no-quadrilhao-do-mdb-25004931"
+      ],
+      "desfecho": "absolvido"
+    },
+    {
+      "de": "geddel",
+      "para": "c-quadrilhao-mdb",
+      "status": "arquivado",
+      "descricao": "Absolvição sumária em 2021, mantida pelo TRF-1 em mar/2023.",
+      "data": "2023-03-07",
+      "fontes": [
+        "https://www1.folha.uol.com.br/colunas/monicabergamo/2023/03/justica-mantem-absolvicao-de-cunha-temer-geddel-e-yunes-no-caso-quadrilhao-do-mdb.shtml",
+        "https://oglobo.globo.com/politica/juiz-federal-absolve-temer-ex-deputados-no-quadrilhao-do-mdb-25004931"
+      ],
+      "desfecho": "absolvido"
+    },
+    {
+      "de": "temer",
+      "para": "c-mala-jbs",
+      "status": "arquivado",
+      "descricao": "Ação trancada por falta de provas (2021); Fachin manteve encerrada em 08/05/2024.",
+      "data": "2024-05-08",
+      "fontes": [
+        "https://g1.globo.com/politica/noticia/2024/05/08/fachin-mantem-encerrada-investigacao-de-temer-no-caso-da-mala-de-r-500-mil.ghtml"
+      ],
+      "desfecho": "trancado"
+    },
+    {
+      "de": "jbs",
+      "para": "c-mala-jbs",
+      "status": "citado",
+      "descricao": "Origem da mala, segundo a delação da J&F.",
+      "data": "2017",
+      "fontes": [
+        "https://g1.globo.com/politica/noticia/2024/05/08/fachin-mantem-encerrada-investigacao-de-temer-no-caso-da-mala-de-r-500-mil.ghtml"
+      ]
+    },
+    {
+      "de": "geddel",
+      "para": "c-bunker",
+      "status": "condenado",
+      "descricao": "Condenado pelo STF (2019); em 2021 a 2ª Turma afastou associação criminosa e manteve lavagem (13 anos e 4 meses). Em liberdade condicional desde 2022.",
+      "data": "2021-08-23",
+      "fontes": [
+        "https://g1.globo.com/politica/noticia/2021/08/23/segunda-turma-do-stf-derruba-condenacao-de-geddel-vieira-lima-e-irmao-por-associacao-criminosa.ghtml",
+        "https://noticias.stf.jus.br/postsnoticias/fachin-defere-liberdade-condicional-ao-ex-ministro-geddel-vieira-lima/"
+      ]
+    },
+    {
+      "de": "cabral",
+      "para": "c-cabral",
+      "status": "condenado",
+      "descricao": "Três condenações anuladas em mar/2024; restavam 18 em vigor na época. Em liberdade desde 2022; ações enviadas ao STJ em 2025.",
+      "data": "2024-03-06",
+      "fontes": [
+        "https://www1.folha.uol.com.br/poder/2024/03/justica-anula-3-condenacoes-de-cabral-e-reduz-em-10-soma-de-suas-penas.shtml",
+        "https://www1.folha.uol.com.br/poder/2025/05/acoes-contra-cabral-sao-enviadas-ao-stj-apos-decisao-do-stf-sobre-foro-especial.shtml"
+      ]
+    },
+    {
+      "de": "serra",
+      "para": "c-serra",
+      "status": "anulado",
+      "descricao": "Gilmar Mendes trancou a ação e anulou buscas e quebras de sigilo em 25/08/2021.",
+      "data": "2021-08-25",
+      "fontes": [
+        "https://www.cnnbrasil.com.br/politica/gilmar-tranca-acao-contra-jose-serra-por-lavagem-de-dinheiro-transnacional/",
+        "https://valor.globo.com/politica/noticia/2021/08/26/gilmar-manda-trancar-acao-penal-contra-serra-movida-pela-lava-jato.ghtml"
+      ]
+    },
+    {
+      "de": "alckmin",
+      "para": "c-alckmin",
+      "status": "arquivado",
+      "descricao": "Ação penal trancada (2022) e improbidade arquivada (out/2024), por nulidade das provas da Odebrecht; a 2ª Turma manteve em ago/2025.",
+      "data": "2025-08-10",
+      "fontes": [
+        "https://conjur.com.br/2025-ago-10/stf-nega-recurso-e-mantem-arquivamento-de-acao-de-improbidade-contra-alckmin/",
+        "https://g1.globo.com/politica/noticia/2024/10/21/toffoli-manda-arquivar-acao-de-improbidade-administrativa-contra-geraldo-alckmin.ghtml"
+      ]
+    },
+    {
+      "de": "odebrecht",
+      "para": "c-alckmin",
+      "status": "citado",
+      "descricao": "Apontada como origem do caixa 2.",
+      "data": "2024-10-21",
+      "fontes": [
+        "https://g1.globo.com/politica/noticia/2024/10/21/toffoli-manda-arquivar-acao-de-improbidade-administrativa-contra-geraldo-alckmin.ghtml"
+      ]
+    },
+    {
+      "de": "chiquinho-brazao",
+      "para": "c-marielle",
+      "status": "condenado",
+      "descricao": "Condenado por unanimidade a 76 anos e 3 meses como mandante; embargos rejeitados em jun/2026.",
+      "data": "2026-02-25",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-condena-irmaos-brazao-a-76-anos-de-prisao-pelo-assassinato-de-marielle-franco-e-anderson-gomes/",
+        "https://noticias.stf.jus.br/postsnoticias/stf-rejeita-recursos-e-mantem-condenacoes-por-assassinato-de-marielle-franco-e-anderson-gomes/",
+        "https://g1.globo.com/politica/noticia/2026/02/25/stf-condenacao-marielle.ghtml"
+      ]
+    },
+    {
+      "de": "domingos-brazao",
+      "para": "c-marielle",
+      "status": "condenado",
+      "descricao": "Condenado por unanimidade a 76 anos e 3 meses como mandante; embargos rejeitados em jun/2026.",
+      "data": "2026-02-25",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-condena-irmaos-brazao-a-76-anos-de-prisao-pelo-assassinato-de-marielle-franco-e-anderson-gomes/",
+        "https://noticias.stf.jus.br/postsnoticias/stf-rejeita-recursos-e-mantem-condenacoes-por-assassinato-de-marielle-franco-e-anderson-gomes/",
+        "https://g1.globo.com/politica/noticia/2026/02/25/stf-condenacao-marielle.ghtml"
+      ]
+    },
+    {
+      "de": "zambelli",
+      "para": "c-zambelli-cnj",
+      "status": "condenado",
+      "descricao": "Condenada a 10 anos pela 1ª Turma, por unanimidade. Em mai/2026 a Cassação italiana recusou a extradição nesse caso.",
+      "data": "2025-05-14",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/por-unanimidade-stf-condena-deputada-carla-zambelli-e-hacker-walter-delgatti/",
+        "https://g1.globo.com/politica/noticia/2026/10/10/justica-italiana-marca-para-o-fim-de-outubro-novo-julgamento-sobre-extradicao-de-zambelli.ghtml"
+      ]
+    },
+    {
+      "de": "zambelli",
+      "para": "c-zambelli-arma",
+      "status": "condenado",
+      "descricao": "Condenada a 5 anos e 3 meses (9 a 2); trânsito em julgado em 30/10/2025. A Itália reanalisa a extradição em 29/10/2026.",
+      "data": "2025-10-30",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/deputada-carla-zambelli-e-condenada-pelo-stf-por-porte-ilegal-de-arma-de-fogo-e-constrangimento-ilegal/",
+        "https://g1.globo.com/politica/noticia/2025/10/30/carla-zambelli-transito-em-julgado-uso-de-arma.ghtml",
+        "https://g1.globo.com/politica/noticia/2026/10/10/justica-italiana-marca-para-o-fim-de-outubro-novo-julgamento-sobre-extradicao-de-zambelli.ghtml"
+      ]
+    },
+    {
+      "de": "silveira",
+      "para": "c-silveira",
+      "status": "condenado",
+      "descricao": "Condenado a 8 anos e 9 meses (10 a 1) em 20/04/2022; o indulto de Bolsonaro foi anulado em 2023. Hoje cumpre a pena em regime aberto.",
+      "data": "2022-04-20",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-condena-daniel-silveira-a-oito-anos-e-nove-meses-de-prisao/",
+        "https://g1.globo.com/politica/noticia/2022/04/20/julgamento-stf-daniel-silveira.ghtml"
+      ]
+    },
+    {
+      "de": "jefferson",
+      "para": "c-jefferson",
+      "status": "condenado",
+      "descricao": "Condenado a 9 anos, 1 mês e 5 dias pelo Plenário (dez/2024); pena em execução.",
+      "data": "2024-12-13",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-condena-roberto-jefferson-por-atentar-contra-exercicio-dos-poderes/",
+        "https://noticias.stf.jus.br/postsnoticias/stf-determina-inicio-do-cumprimento-da-pena-imposta-a-ex-deputado-roberto-jefferson/"
+      ]
+    },
+    {
+      "de": "juscelino",
+      "para": "c-codevasf",
+      "status": "denunciado",
+      "descricao": "Denunciado pela PGR ao STF em 08/04/2025 por corrupção, quando era deputado. Deixou o ministério. Prazos suspensos por Dino em mai/2025; não há registro de que a denúncia já tenha sido recebida.",
+      "data": "2025-04-08",
+      "fontes": [
+        "https://g1.globo.com/politica/noticia/2025/04/08/pgr-denuncia-ao-stf-ministro-das-comunicacoes-juscelino-filho-por-suposta-corrupcao-em-emendas-quando-era-deputado.ghtml",
+        "https://noticias.uol.com.br/colunas/aguirre-talento/2025/05/13/dino-suspende-denuncia-da-pgr-contra-juscelino-filho-por-estar-ilegivel.htm"
+      ]
+    },
+    {
+      "de": "lira",
+      "para": "c-lira-cbtu",
+      "status": "arquivado",
+      "descricao": "A 1ª Turma rejeitou a denúncia por unanimidade em 06/06/2023, a pedido da PGR, por falta de prova além das delações.",
+      "data": "2023-06-06",
+      "fontes": [
+        "https://noticias.stf.jus.br/postsnoticias/1a-turma-rejeita-denuncia-contra-arthur-lira-por-corrupcao-passiva/",
+        "https://g1.globo.com/politica/noticia/2023/06/06/turma-do-stf-forma-maioria-para-arquivar-investigacao-contra-lira.ghtml"
+      ]
+    }
+  ]
+}
