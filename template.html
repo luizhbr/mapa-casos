@@ -1,66 +1,84 @@
 <!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mapa dos casos: governos Bolsonaro e Lula 3</title>
+<title>Mapa dos casos: políticos, partidos, empresas e processos</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;font-family:"Noto Sans",system-ui,sans-serif;background:#f4f1ea;color:#1d1d1f}
-header{padding:16px 22px;border-bottom:1px solid #e2ddd2;background:#fff}
-h1{font-family:"Noto Serif",Georgia,serif;font-size:24px}
-header p{font-size:13.5px;color:#555;margin-top:4px;max-width:1000px}
-.wrap{display:flex;height:calc(100% - 118px)}
+header{padding:14px 22px;border-bottom:1px solid #e2ddd2;background:#fff}
+h1{font-family:"Noto Serif",Georgia,serif;font-size:23px}
+header p{font-size:13.5px;color:#555;margin-top:4px;max-width:1100px}
+.wrap{display:flex;height:calc(100% - 150px)}
 #net{flex:1;min-width:0}
-aside{width:360px;background:#fff;border-left:1px solid #e2ddd2;padding:18px;overflow:auto;font-size:14px;line-height:1.5}
+aside{width:370px;background:#fff;border-left:1px solid #e2ddd2;padding:18px;overflow:auto;font-size:14px;line-height:1.5}
 aside h2{font-family:"Noto Serif",Georgia,serif;font-size:20px;margin-bottom:4px}
 aside .role{color:#666;font-size:13px;margin-bottom:12px}
 .item{border-left:4px solid #ccc;padding:6px 10px;margin:10px 0;background:#faf8f3;border-radius:0 8px 8px 0}
-.item b{display:block}
-.item a{color:#1f5fa8;font-size:12.5px}
-.pill{display:inline-block;font-size:11px;font-weight:700;color:#fff;border-radius:5px;padding:1px 7px;margin:2px 0 4px;text-transform:uppercase}
-.bar{display:flex;flex-wrap:wrap;gap:14px;align-items:center;padding:8px 22px;font-size:12.5px;background:#fff;border-bottom:1px solid #e2ddd2}
+.item b{display:block;cursor:pointer}
+.item a{color:#1f5fa8;font-size:12.5px;margin-right:8px}
+.pill{display:inline-block;font-size:11px;font-weight:700;color:#fff;border-radius:5px;padding:1px 7px;margin:2px 4px 4px 0;text-transform:uppercase}
+.bar{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;padding:8px 22px;font-size:12.5px;background:#fff;border-bottom:1px solid #e2ddd2}
 .bar span{display:flex;align-items:center;gap:5px}
 .sw{width:12px;height:12px;border-radius:50%;display:inline-block}
 .ln{width:22px;height:0;border-top:3px solid;display:inline-block}
-.bar input{margin-left:auto;padding:5px 9px;border:1px solid #ccc;border-radius:6px;font-size:13px;width:200px}
+.bar #q{margin-left:auto;padding:5px 9px;border:1px solid #ccc;border-radius:6px;font-size:13px;width:200px}
+.bar label{display:flex;gap:4px;align-items:center}
 .hint{color:#777;font-size:13px}
-@media(max-width:800px){.wrap{flex-direction:column}aside{width:100%;height:40%}}
+@media(max-width:800px){.wrap{flex-direction:column;height:auto}#net{height:60vh}aside{width:100%}}
 </style></head><body>
-<header><h1>Mapa dos casos nos governos Bolsonaro (2019–2022) e Lula 3 (2023–2026)</h1>
-<p>Quem aparece em cada caso e em que situação. Ser citado ou investigado não é ser culpado: só condenação é crime reconhecido pela Justiça. Clique em uma pessoa ou caso para ver os detalhes e a fonte. Situação em 17/10/2026.</p></header>
+<header><h1>Mapa dos casos: políticos, partidos, empresas e processos</h1>
+<p>Quem aparece em cada caso e em que situação, da direita e da esquerda. Ser citado ou investigado não é ser culpado: só condenação definitiva é crime reconhecido pela Justiça, e casos anulados ou arquivados não valem como condenação. O número de nomes de cada lado reflete os casos escolhidos e não é um placar de corrupção. Clique em qualquer ponto para ver os detalhes e as fontes. Situação em 17/10/2026.</p></header>
 <div class="bar">
-<span><i class="sw" style="background:#1f5fa8"></i>Direita / bolsonarismo</span>
-<span><i class="sw" style="background:#7b5ea7"></i>Centrão</span>
-<span><i class="sw" style="background:#c0392b"></i>Esquerda / governo Lula</span>
+<span><i class="sw" style="background:#1f5fa8"></i>Direita</span>
+<span><i class="sw" style="background:#7b5ea7"></i>Centro</span>
+<span><i class="sw" style="background:#c0392b"></i>Esquerda</span>
 <span><i class="sw" style="background:#2c3e50"></i>Judiciário</span>
-<span><i class="sw" style="background:#b8860b"></i>Empresários e operadores</span>
+<span><i class="sw" style="background:#b8860b"></i>Empresas e operadores</span>
 <span>|</span>
 <span><i class="ln" style="border-color:#c0392b"></i>Condenado</span>
 <span><i class="ln" style="border-color:#e67e22"></i>Denunciado</span>
 <span><i class="ln" style="border-color:#d4a017"></i>Indiciado</span>
-<span><i class="ln" style="border-color:#2c6fbb"></i>Investigado / preso</span>
+<span><i class="ln" style="border-color:#2c6fbb"></i>Investigado</span>
 <span><i class="ln" style="border-color:#999;border-top-style:dashed"></i>Citado</span>
-<span><i class="ln" style="border-color:#bbb;border-top-style:dotted"></i>Arquivado</span>
+<span><i class="ln" style="border-color:#16a085;border-top-style:dashed"></i>Anulado</span>
+<span><i class="ln" style="border-color:#bbb;border-top-style:dotted"></i>Arquivado / absolvido</span>
+<label><input type="checkbox" id="parties"> Mostrar partidos</label>
 <input id="q" placeholder="Buscar nome ou caso">
 </div>
-<div class="wrap"><div id="net"></div><aside id="info"><h2>Como ler</h2><p class="hint">Os quadrados escuros são os casos. Os círculos são pessoas, coloridos pelo campo político. A linha mostra a situação de cada pessoa no caso. Linhas finas cinzas ligam pessoas entre si, como parentesco ou doações.<br><br>Daniel Vorcaro e o Banco Master são o principal ponto de interseção: o caso atinge direita, centrão, governo Lula e o STF.</p></aside></div>
+<div class="wrap"><div id="net"></div><aside id="info"><h2>Como ler</h2><p class="hint">Os retângulos escuros são os casos. Os círculos são pessoas e empresas, coloridos pelo campo político na época do caso. A cor da linha mostra a situação de cada um no caso. Linhas pontilhadas finas ligam pessoas entre si, como parentesco.<br><br>Daniel Vorcaro e o Banco Master são o principal ponto de interseção: o caso atinge direita, centro, governo Lula e o STF.<br><br>Marque "Mostrar partidos" para ver a filiação de cada um.</p></aside></div>
 <script>/*VIS*/</script>
 <script>/*DATA*/</script>
 <script>
-const COL={dir:"#1f5fa8",cen:"#7b5ea7",esq:"#c0392b",jud:"#2c3e50",emp:"#b8860b"};
-const ST={cond:["Condenado","#c0392b",false,5],den:["Denunciado","#e67e22",false,4],ind:["Indiciado","#d4a017",false,3.5],inv:["Investigado / preso","#2c6fbb",false,3],cit:["Citado","#999",[6,5],2],arq:["Arquivado","#bbb",[2,4],2]};
-const LADO={dir:"Direita / bolsonarismo",cen:"Centrão",esq:"Esquerda / governo Lula",jud:"Judiciário",emp:"Empresários e operadores"};
-const L=LINKS.filter(l=>l[3]);
+const COL={direita:"#1f5fa8",centro:"#7b5ea7",esquerda:"#c0392b",judiciario:"#2c3e50","n-a":"#b8860b"};
+const LADO={direita:"Direita",centro:"Centro",esquerda:"Esquerda",judiciario:"Judiciário","n-a":"Empresas e operadores"};
+const ST={condenado:["Condenado","#c0392b",false,5],denunciado:["Denunciado","#e67e22",false,4],indiciado:["Indiciado","#d4a017",false,3.5],investigado:["Investigado","#2c6fbb",false,3],citado:["Citado","#999",[6,5],2],anulado:["Anulado","#16a085",[6,5],2.5],arquivado:["Arquivado","#bbb",[2,4],2]};
+const ORD=Object.keys(ST);
+const N=Object.fromEntries(D.nodes.map(n=>[n.id,n]));
+const E=D.edges, T=D.ligacoes||[];
+const deg=id=>E.filter(e=>e.de==id||e.para==id).length;
 const nodes=[],edges=[];
-CASES.forEach(c=>nodes.push({id:c[0],label:c[1],shape:"box",color:{background:"#1d1d1f",border:"#1d1d1f"},font:{color:"#fff",size:16,face:"Noto Sans"},margin:10,mass:3}));
-PEOPLE.forEach(p=>{const n=L.filter(l=>l[0]==p[0]).length;nodes.push({id:p[0],label:p[1],shape:"dot",size:10+n*3,color:{background:COL[p[2]],border:"#fff"},borderWidth:2,font:{size:14,face:"Noto Sans"}})});
-L.forEach((l,i)=>{const s=ST[l[2]];edges.push({id:"l"+i,from:l[0],to:l[1],color:{color:s[1]},width:s[3],dashes:s[2]})});
-TIES.forEach((t,i)=>edges.push({id:"t"+i,from:t[0],to:t[1],color:{color:"#cfc8b8"},width:1,dashes:[1,3],label:t[2],font:{size:10,color:"#999",strokeWidth:3}}));
-const net=new vis.Network(document.getElementById("net"),{nodes:new vis.DataSet(nodes),edges:new vis.DataSet(edges)},{physics:{solver:"forceAtlas2Based",forceAtlas2Based:{gravitationalConstant:-90,springLength:120},stabilization:{iterations:400}},interaction:{hover:true},edges:{smooth:{type:"continuous"}}});
-const src=k=>k&&SRC[k]?`<a href="${SRC[k][1]}" target="_blank" rel="noopener">${SRC[k][0]}</a>`:"";
-function show(id){const info=document.getElementById("info");const c=CASES.find(x=>x[0]==id);
-if(c){let h=`<h2>${c[1]}</h2><p class="role">${c[2]} ${src(c[3])}</p>`;
-L.filter(l=>l[1]==id).sort((a,b)=>Object.keys(ST).indexOf(a[2])-Object.keys(ST).indexOf(b[2])).forEach(l=>{const p=PEOPLE.find(x=>x[0]==l[0]);const s=ST[l[2]];h+=`<div class="item" style="border-color:${s[1]}"><b>${p[1]}</b><span class="pill" style="background:${s[1]}">${s[0]}</span> <span class="hint">${LADO[p[2]]}</span><br>${l[3]}<br>${src(l[4])}</div>`});info.innerHTML=h;return}
-const p=PEOPLE.find(x=>x[0]==id);if(!p)return;let h=`<h2>${p[1]}</h2><p class="role">${p[3]} · ${LADO[p[2]]}</p>`;
-L.filter(l=>l[0]==id).forEach(l=>{const c=CASES.find(x=>x[0]==l[1]);const s=ST[l[2]];h+=`<div class="item" style="border-color:${s[1]}"><b>${c[1]}</b><span class="pill" style="background:${s[1]}">${s[0]}</span><br>${l[3]}<br>${src(l[4])}</div>`});
-TIES.filter(t=>t[0]==id||t[1]==id).forEach(t=>{const o=PEOPLE.find(x=>x[0]==(t[0]==id?t[1]:t[0]));h+=`<div class="item"><b>Ligação com ${o[1]}</b>${t[2]}</div>`});info.innerHTML=h}
-net.once("stabilizationIterationsDone",()=>net.fit({animation:false}));net.on("click",e=>{if(e.nodes.length)show(e.nodes[0])});
-document.getElementById("q").addEventListener("input",e=>{const q=e.target.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");if(q.length<2)return;const all=[...PEOPLE.map(p=>[p[0],p[1]]),...CASES.map(c=>[c[0],c[1]])];const m=all.find(a=>a[1].toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").includes(q));if(m){net.selectNodes([m[0]]);net.focus(m[0],{scale:1.2,animation:true});show(m[0])}});
+D.nodes.forEach(n=>{
+ if(n.tipo=="caso")nodes.push({id:n.id,label:n.nome,shape:"box",color:{background:"#1d1d1f",border:"#1d1d1f"},font:{color:"#fff",size:15,face:"Noto Sans"},margin:9,mass:3});
+ else if(n.tipo=="partido")nodes.push({id:n.id,label:n.nome.split(" – ")[0],shape:"diamond",size:16,color:{background:COL[n.lado]||"#888",border:"#fff"},font:{size:14,bold:true},hidden:true,isParty:true});
+ else nodes.push({id:n.id,label:n.nome.replace(/ \(.*\)/,""),shape:n.tipo=="empresa"?"square":"dot",size:9+deg(n.id)*2.5,color:{background:COL[n.lado]||"#888",border:"#fff"},borderWidth:2,font:{size:14,face:"Noto Sans"}});
+});
+E.forEach((e,i)=>{const s=ST[e.status]||ST.citado;edges.push({id:"e"+i,from:e.de,to:e.para,color:{color:s[1]},width:s[3],dashes:s[2]})});
+T.forEach((t,i)=>edges.push({id:"t"+i,from:t.de,to:t.para,color:{color:"#cfc8b8"},width:1,dashes:[1,3],label:t.rotulo,font:{size:10,color:"#999",strokeWidth:3}}));
+D.nodes.filter(n=>n.tipo=="pessoa"&&n.partido&&N[n.partido]).forEach((n,i)=>edges.push({id:"p"+i,from:n.id,to:n.partido,color:{color:"#e0dacb"},width:1,hidden:true,isParty:true}));
+const ND=new vis.DataSet(nodes),ED=new vis.DataSet(edges);
+const net=new vis.Network(document.getElementById("net"),{nodes:ND,edges:ED},{physics:{solver:"forceAtlas2Based",forceAtlas2Based:{gravitationalConstant:-110,springLength:130},stabilization:{iterations:500}},interaction:{hover:true},edges:{smooth:{type:"continuous"}}});
+net.once("stabilizationIterationsDone",()=>net.fit({animation:false}));
+const host=u=>{try{return new URL(u).hostname.replace(/^www\d?\./,"")}catch(e){return "fonte"}};
+const fontes=f=>(f||[]).map(u=>`<a href="${u}" target="_blank" rel="noopener">${host(u)}</a>`).join("");
+const item=(n,e,extra)=>{const s=ST[e.status]||ST.citado;return `<div class="item" style="border-color:${s[1]}"><b onclick="go('${n.id}')">${n.nome}</b><span class="pill" style="background:${s[1]}">${s[0]}${e.desfecho?" · "+e.desfecho:""}</span>${extra||""}<br>${e.descricao||""}${e.data?` <span class="hint">(${e.data.split("-").reverse().join("/")})</span>`:""}<br>${fontes(e.fontes)}</div>`};
+function show(id){const n=N[id];if(!n)return;const info=document.getElementById("info");
+ let h=`<h2>${n.nome}</h2><p class="role">${n.resumo||""}${n.tipo!="caso"?" · "+(n.tipo=="partido"?"Partido":LADO[n.lado]||""):""}${n.partido&&N[n.partido]?" · "+N[n.partido].nome.split(" – ")[0]:""}</p>`;
+ const rel=E.filter(e=>e.de==id||e.para==id).sort((a,b)=>ORD.indexOf(a.status)-ORD.indexOf(b.status));
+ rel.forEach(e=>{const o=N[e.de==id?e.para:e.de];h+=item(o,e,n.tipo=="caso"&&o.tipo!="caso"?` <span class="hint">${LADO[o.lado]||""}</span>`:"")});
+ if(n.tipo=="partido")D.nodes.filter(p=>p.partido==id).forEach(p=>h+=`<div class="item"><b onclick="go('${p.id}')">${p.nome}</b></div>`);
+ T.filter(t=>t.de==id||t.para==id).forEach(t=>{const o=N[t.de==id?t.para:t.de];h+=`<div class="item"><b onclick="go('${o.id}')">Ligação com ${o.nome}</b>${t.rotulo}</div>`});
+ info.innerHTML=h;info.scrollTop=0}
+function go(id){const nd=ND.get(id);if(nd&&nd.hidden)return show(id);net.selectNodes([id]);net.focus(id,{scale:1.1,animation:true});show(id)}
+net.on("click",e=>{if(e.nodes.length)show(e.nodes[0])});
+document.getElementById("parties").addEventListener("change",e=>{const h=!e.target.checked;ND.update(nodes.filter(n=>n.isParty).map(n=>({id:n.id,hidden:h})));ED.update(edges.filter(x=>x.isParty).map(x=>({id:x.id,hidden:h})));});
+const norm=s=>s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+document.getElementById("q").addEventListener("input",e=>{const q=norm(e.target.value);if(q.length<2)return;const m=D.nodes.find(n=>n.tipo!="partido"&&norm(n.nome).includes(q));if(m)go(m.id)});
 </script></body></html>
